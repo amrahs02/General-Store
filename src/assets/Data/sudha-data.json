@@ -1,0 +1,96 @@
+{
+  "images": {
+    "milk": "/assets/milk.png",
+    "curd": "/assets/dahi.png",
+    "paneer": "/assets/paneer.png",
+    "rasgulla": "/assets/rasogulla.png",
+    "surbhiRabri": "/assets/surbhi-rabri.png",
+    "ghee": "/assets/ghee.jpg"
+  },
+  "welcome": {
+    "english": "Welcome to",
+    "hindi": "स्वागत है"
+  },
+  "sudhaDairy": {
+    "english": "Sudha Dairy",
+    "hindi": "सुधा डेयरी"
+  },
+  "discoverText": {
+    "english": "Discover the finest dairy products from Sudha Dairy, where quality meets tradition. From pure and fresh milk to delightful sweets, we have it all for you.",
+    "hindi": "सुधा डेयरी से श्रेष्ठ डेयरी उत्पादों की खोज करें, जहां गुणवत्ता परंपरा से मिलती है। शुद्ध और ताजगी से भरे दूध से लेकर आपके लिए हम सब कुछ रखते हैं।"
+  },
+  "ourDairyDelights": {
+    "english": "Our Dairy Delights",
+    "hindi": "हमारे डेयरी डिलाइट्स"
+  },
+  "specialOrders": {
+    "english": "Special Orders for Your Special Moments",
+    "hindi": "आपके विशेष क्षणों के लिए विशेष आदेश"
+  },
+  "deliveryCommitment": {
+    "english": "Planning a wedding, birthday, or any special event? We, ve got you covered! Place orders for Sudha dairy products and make your celebrations even more memorable. Whether it's bulk milk, paneer, or delightful sweets, we cater to all your needs.  ",
+    "hindi": "शादी, जन्मदिन या कोई विशेष घटना का योजना बना रहे हैं? हम आपकी सुरक्षा के लिए हैं! सुधा डेयरी उत्पादों के लिए आदेश प्लेस करें और अपने उत्सवों को और भी यादगार बनाएं। चाहे बल्क दूध हो, पनीर हो, या मिठाई हो, हम आपकी सभी आवश्यकताओं का समर्थन करते हैं।"
+  },
+  "products": [
+    {
+      "name": {
+        "english": "Sudha Fresh Milk",
+        "hindi": "सुधा ताजा दूध"
+      },
+      "description": {
+        "english": "Pure and rich in flavor, a staple for a healthy lifestyle.",
+        "hindi": "शुद्ध और स्वाद में रिच, स्वस्थ जीवनशैली के लिए एक आदान-प्रदान है।"
+      }
+    },
+    {
+      "name": {
+        "english": "Sudha Creamy Curd",
+        "hindi": "सुधा क्रीमी दही"
+      },
+      "description": {
+        "english": "Experience the goodness of our creamy curd, perfect for any meal or snack.",
+        "hindi": "हमारे क्रीमी दही की भलाइयों का अनुभव करें, जो किसी भी भोजन या बड़ी छुट्टी के लिए सही है।"
+      }
+    },
+    {
+      "name": {
+        "english": "Sudha Fresh Paneer",
+        "hindi": "सुधा ताजा पनीर"
+      },
+      "description": {
+        "english": "Add a touch of richness to your dishes with our farm-fresh paneer.",
+        "hindi": "हमारे फार्म-फ्रेश पनीर के साथ अपने व्यंजन में एक स्पर्श रिचनेस जोड़ें।"
+      }
+    },
+    {
+      "name": {
+        "english": "Sudha Rasgulla",
+        "hindi": "सुधा रसगुल्ला"
+      },
+      "description": {
+        "english": "Indulge in the sweetness of Sudha Rasgulla, a delightful treat for your taste buds.",
+        "hindi": "सुधा रसगुल्ला की मिठास में रमण करें, आपके स्वाद बुद्धि के लिए एक प्रिय सामग्री।"
+      }
+    },
+    {
+      "name": {
+        "english": "Sudha Surbhi Rabri",
+        "hindi": "सुधा सुर्भि रबड़ी"
+      },
+      "description": {
+        "english": "Savor the richness of Sudha Surbhi Rabri, a traditional delight crafted with care.",
+        "hindi": "सुधा सुर्भि रबड़ी की रिचनेस का स्वाद लें, जो सावधानी से बनाई गई एक पारंपरिक खुशी है।"
+      }
+    },
+    {
+      "name": {
+        "english": "Pure Sudha Ghee",
+        "hindi": "शुद्ध सुधा घी"
+      },
+      "description": {
+        "english": "Experience the purity of Sudha Ghee, perfect for enhancing the flavor of your dishes.",
+        "hindi": "सुधा घी की पवित्रता का अनुभव करें, जो आपके व्यंजन के स्वाद को बढ़ाने के लिए पूर्ण है।"
+      }
+    }
+  ]
+}
