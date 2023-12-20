@@ -17,7 +17,7 @@ const Xerox = () => {
   };
 
   return (
-    <div className="  xerox,-container p-8 bg-gray-700 text-white">
+    <div className="  xerox,-container p-8 bg-slate-700 text-white">
       <button
         className="btn bg-blue-700 hover:bg-blue-900 font-bold py-2 px-4 mb-6"
         onClick={() => Navigate(-1)}

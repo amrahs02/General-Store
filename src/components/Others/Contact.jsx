@@ -6,7 +6,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="contact-container p-8 bg-blue-500">
+    <div className="contact-container p-8 bg-slate-700">
       <button
         className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-6"
         onClick={() => navigate(-1)}

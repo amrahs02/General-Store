@@ -20,7 +20,7 @@ const Sudhadairy = ({ language, toggleLanguage }) => {
   const getLocalizedString = (obj) => (language === 'english' ? obj.english : obj.hindi);
 
   return (
-    <div className="contact-container p-8 bg-yellow-500">
+    <div className="contact-container p-8 bg-slate-700">
       <button className="btn bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 mb-6" onClick={() => navigate(-1)}>
         Go Back
       </button>
