@@ -10,7 +10,7 @@ import UnderConstruction from './Others/UnderConstruction';
 const Home = () => (
   <div className="home-container">
     <Suspense fallback={<LoadingFallback />}>
-      {/* <MainHeading /> */}
+      <MainHeading />
     </Suspense>
     <Suspense fallback={<LoadingFallback />}>
       {/* <Products /> */}
