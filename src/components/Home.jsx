@@ -1,26 +1,24 @@
 
 import { Suspense, lazy } from 'react';
 import Products from './Products';
-// import Footer from './Others/Footer';
 const MainHeading = lazy(() => import('./MainHeading'));
 import { SyncLoader } from 'react-spinners'; // Import the SyncLoader from react-spinners
+import CategoryCard from './CategoryCard';
+import UnderConstruction from './Others/UnderConstruction';
 
 
 const Home = () => (
   <div className="home-container">
-    <header className="hero-section">
-      <Suspense fallback={<LoadingFallback />}>
-        <MainHeading />
-      </Suspense>
-      <Suspense fallback={<LoadingFallback />}>
-      </Suspense>
-    </header>
     <Suspense fallback={<LoadingFallback />}>
+      {/* <MainHeading /> */}
     </Suspense>
     <Suspense fallback={<LoadingFallback />}>
-      <Products />
-      {/* <Footer /> */}
+      {/* <Products /> */}
     </Suspense>
+    <Suspense fallback={<LoadingFallback />}>
+      <CategoryCard />
+    </Suspense>
+    <UnderConstruction />
 
   </div>
 );

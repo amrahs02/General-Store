@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import shopInfo from '../../assets/Data/Names.json'; // Adjust the path based on your project structure
+import shopInfo from '../assets/Data/Names.json'; // Adjust the path based on your project structure
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -19,9 +19,6 @@ const Contact = () => {
           Contact Us
         </h1>
 
-        <p className="text-gray-700 text-lg mb-6 bg-opacity-25 bg-gray-200 p-4 rounded">
-          Have questions or want to place an order? Feel free to reach out to us. We're here to help!
-        </p>
 
         {/* Text within a Box */}
         <div className="text-box mt-8 bg-opacity-25 bg-gray-200 p-8 rounded">

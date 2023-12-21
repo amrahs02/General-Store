@@ -5,7 +5,6 @@ import './index.css'
 import { CartProvider } from './context/cart.jsx'
 import { Provider } from 'react-redux'
 import store from './store.jsx'
-import { SyncLoader } from 'react-spinners'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
