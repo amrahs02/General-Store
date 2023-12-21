@@ -45,14 +45,16 @@ export default function Products() {
   };
 
   return (
-    <div className="flex flex-col justify-center bg-gray-100 min-h-screen">
+    <div className=" bg-gray-100 min-h-screen">
       <ToastContainer />
 
-      <div className="flex justify-between items-center px-6 py-4 bg-blue-500 text-white">
+      <div className="flex justify-between items-center  bg-blue-500 text-white">
         <h1 className="text-2xl uppercase font-bold mt-2 mb-2">Shop</h1>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-6 py-8">
+
+        {/* for every product */}
         {productData.products.map((product) => (
           <div key={product.id} className="bg-white shadow-md rounded-lg p-6">
             <img src={product.thumbnail} alt={product.title} className="rounded-md w-52 h-40 object-cover mb-4" />
@@ -63,6 +65,8 @@ export default function Products() {
               <p className="mt-2 text-gray-600">${product.price}</p>
             </div>
 
+
+            {/* add to cart button */}
             <div className="mt-4 flex justify-between items-center">
               {!cartItems.find((item) => item.id === product.id) ? (
                 <button
@@ -101,6 +105,7 @@ export default function Products() {
                 </div>
               )}
             </div>
+
           </div>
         ))}
       </div>

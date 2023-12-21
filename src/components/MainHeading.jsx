@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -8,6 +7,7 @@ import sprite2 from '../assets/sprite-3.jpg';
 import sprite4 from '../assets/sprite-4.jpg';
 import { toggleLanguage } from '../actions/languageActions';
 import { connect } from 'react-redux';
+import { useEffect, useRef } from 'react';
 
 const MainHeading = ({ language, toggleLanguage }) => {
   const sliderSettings = {
@@ -76,6 +76,12 @@ const MainHeading = ({ language, toggleLanguage }) => {
               </button>
             </Link>
           </div>
+          {/* <div className=" mt-10">
+            Managed by: <span className='font-bold text-yellow-500'>
+              Arun Sharma
+            </span>
+          </div> */}
+
         </div>
       </div>
     </>
