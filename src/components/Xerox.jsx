@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import specialOfferImage from '../assets/special-offer-3.png';
 import aadharCardImage from '../assets/aadhaar-card.png';
 import namesData from '../assets/Data/Names.json'; // Import the JSON file
+import BackButton from './Navigation/BackButton';
 
 
 const Xerox = () => {
@@ -17,20 +18,15 @@ const Xerox = () => {
   };
 
   return (
-    <div className="  xerox,-container p-8 bg-slate-700 text-white">
-      <button
-        className="btn bg-blue-700 hover:bg-blue-900 font-bold py-2 px-4 mb-6"
-        onClick={() => Navigate(-1)}
-      >
-        Go Back
-      </button>
+    <div className="  xerox,-container p-8 bg-gray-100 text-white">
+       <BackButton/>
 
       <div className="xerox-content bg-white p-8 rounded-lg shadow-md text-center">
-        <h1 className="text-4xl font-bold mb-6 text-blue-500 bg-opacity-25 bg-blue-100 p-4 rounded">
+        <h1 className="text-4xl font-bold mb-6 text-blue-500  p-4 rounded">
           Welcome to <span className="block">{namesData.shopName}</span>
         </h1>
 
-        <p className="text-gray-700 text-lg mb-6 bg-opacity-25 bg-gray-200 p-4 rounded">
+        <p className="text-gray-700 text-lg mb-6 p-4 rounded">
           Discover the power of seamless documentation at{' '}
           <span className="font-bold text-blue-500">{namesData.shopName}</span>. We offer a range of   <span className="text-purple-500">xerox</span>, services with attractive   <span className="text-green-500">discounts</span>, for various documents.
         </p>

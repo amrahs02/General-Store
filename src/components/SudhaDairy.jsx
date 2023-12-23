@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Navigate } from 'react-router-dom';
 import productData from '../assets/Data/data.json';
 import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
+import BackButton from './Navigation/BackButton.jsx';
 
 export default function Products() {
   const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
@@ -30,16 +31,11 @@ export default function Products() {
   };
 
   return (
-    <div className="contact-container p-8 bg-slate-700">
+    <div className="contact-container p-8 bg-gray-100">
       <ToastContainer />
 
-      <button className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-6" onClick={() => Navigate(-1)}>
-        Go Back
-      </button>
-
-    
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-8 rounded-lg bg-blue-50 gap-4">
+     <BackButton/>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-8 sm:bg-white rounded-lg  gap-4">
         
         {productData.products.map((product) => (
           <div key={product.id} className="bg-slate-100 shadow-md w-fit rounded-lg p-6">

@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Cold Drink",
-        "route": "colddrink",
+        "name": "Cold Drinks",
+        "route": "colddrinks",
         "color": "bg-gray-700",
         "description": "Quench your thirst with our refreshing selection of Cold Drinks. From sodas to iced teas, we have the perfect beverages to keep you cool.",
         "image": "https://as1.ftcdn.net/v2/jpg/04/99/80/72/1000_F_499807265_uszlulkVF96h1bRKizY6Bg5Ljoo2fuPM.jpg"

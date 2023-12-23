@@ -28,8 +28,7 @@ const Layout = () => {
 
   return (
     <div className="bg-gray-700 min-h-screen font-sans">
-      <div className="flex flex-col md:flex-row justify-between items-center p-4 md:p-4 bg-gray-900 rounded-b-lg text-white">
-
+      <div className="flex fixed z-10 w-full flex-col md:flex-row  justify-between items-center pt-2 md:p-4 bg-gray-900  text-white">
         <div className="text-center md:text-left">
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
         </div>
@@ -44,8 +43,7 @@ const Layout = () => {
             <li>
               <Link
                 to="/sudhadairy"
-                className="text-white font-bold hover:text-blue-500"
-              >
+                className="text-white font-bold hover:text-blue-500">
                 Sudha Dairy
               </Link>
             </li>
@@ -80,13 +78,10 @@ const Layout = () => {
         </div>
       </div>
 
-
-
       {/* Main Content */}
-      <div className="main-content bg-gray-200">
+      <div className="main-content  bg-gray-200">
         <Outlet />
       </div>
-
       <div>
         <Footer />
       </div>

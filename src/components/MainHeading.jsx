@@ -31,33 +31,33 @@ const MainHeading = ({ language, toggleLanguage }) => {
 
   return (
     <>
-      <div className="heading relative bg-black">
+      <div className="heading m-0 p-0  relative bg-black">
         <Slider ref={sliderRef} {...sliderSettings}>
-          <div className="bg-cover bg-center bg-no-repeat relative h-screen">
+          <div className="bg-cover mt-20 bg-center bg-no-repeat relative h-screen">
             <img
-              className='w-screen h-full opacity-50 object-cover rounded-md'
+              className='w-screen h-full opacity-60 object-cover '
               src={sprite1}
               alt="Slide 1"
             />
           </div>
-          <div className="bg-cover bg-center bg-no-repeat relative h-screen">
+          <div className="bg-cover mt-20 bg-center bg-no-repeat relative  h-screen">
             <img
-              className='w-screen h-full opacity-50 object-cover rounded-md'
-              src={sprite2}
+              className='w-screen h-full opacity-60 object-cover '
+              src={sprite2} 
               alt="Slide 1"
             />
           </div>
-          <div className="bg-cover bg-center  bg-no-repeat relative h-screen">
+          <div className="bg-cover mt-20 bg-center  bg-no-repeat relative h-screen">
             <img
-              className='w-screen h-full opacity-50 object-cover rounded-md'
+              className='w-screen h-full opacity-60 object-cover '
               src={sprite4}
               alt="Slide 1"
             />
           </div>
         </Slider>
-        <div className="absolute top-1/3 left-1/2 w-5/6 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+        <div className="absolute top-1/3 left-1/2 w-5/6 transform -translate-x-1/2  -translate-y-1/2 text-center text-white">
           {/* The rest of your content */}
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-6 text-white">
+          <h1 className="text-6xl md:text-8xl mt-32 font-extrabold mb-6 text-white">
             <div className='text-2xl'>Welcome to</div>
             <div>
               Anushka General Store
