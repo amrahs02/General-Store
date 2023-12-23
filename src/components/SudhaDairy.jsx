@@ -31,11 +31,11 @@ export default function Products() {
   };
 
   return (
-    <div className="contact-container p-8 bg-gray-100">
+    <div className="contact-container p-0 bg-gray-100">
       <ToastContainer />
 
      <BackButton/>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-8 sm:bg-white rounded-lg  gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-4 sm:bg-white rounded-lg  gap-4">
         
         {productData.products.map((product) => (
           <div key={product.id} className="bg-slate-100 shadow-md w-fit rounded-lg p-6">

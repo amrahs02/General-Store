@@ -28,7 +28,7 @@ const Layout = () => {
 
   return (
     <div className="bg-gray-700 min-h-screen font-sans overflow-x-hidden">
-      <div className="flex fixed z-10 w-full flex-col md:flex-row  justify-between items-center pt-2 bg-gray-900  text-white">
+      <div className="flex z-10 w-full flex-col md:flex-row p-2  justify-between items-center pt-2 bg-gray-900  text-white">
         <div className="text-center md:text-left">
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
         </div>

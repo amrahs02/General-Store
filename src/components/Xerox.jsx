@@ -18,11 +18,11 @@ const Xerox = () => {
   };
 
   return (
-    <div className="  xerox,-container p-8 bg-gray-100 text-white">
+    <div className="  xerox,-container  p-0 bg-gray-100 text-white">
        <BackButton/>
 
-      <div className="xerox-content bg-white p-8 rounded-lg shadow-md text-center">
-        <h1 className="text-4xl font-bold mb-6 text-blue-500  p-4 rounded">
+      <div className="xerox-content bg-white p-4 rounded-lg shadow-md text-center">
+        <h1 className="text-4xl font-bold mb-6 bg-blue-100 text-blue-500  p-4 rounded">
           Welcome to <span className="block">{namesData.shopName}</span>
         </h1>
 
