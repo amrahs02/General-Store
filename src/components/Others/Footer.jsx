@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -24,11 +23,23 @@ const Footer = () => {
         <div className="mb-8 md:mb-0">
           <h4 className="text-xl font-bold mb-4">CUSTOMER POLICIES</h4>
           <ul>
-            <li>Contact Us</li>
-            <li>FAQ</li>
-            <li>T&C</li>
-            <li>Terms Of Use</li>
-            <li>Privacy policy</li>
+            <li>
+              <Link
+                to="/contact"
+                className="hover:underline">
+                Contact Us
+              </Link>
+            </li>
+            <li >
+              <Link
+                to="/faq"
+                className='hover:underline'>
+                FAQ
+              </Link>
+            </li>
+            {/* <li>T&C</li> */}
+            {/* <li>Terms Of Use</li> */}
+            {/* <li>Privacy policy</li> */}
           </ul>
         </div>
         <div>

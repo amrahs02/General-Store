@@ -1,0 +1,129 @@
+[
+    {
+        "id": 1,
+        "name": "Sprite",
+        "price": "20 Rupees",
+        "volume": "700ml, 1 Ltr, 2 Ltr",
+        "color": "bg-blue-200"
+    },
+    {
+        "id": 2,
+        "name": "Coca-Cola",
+        "price": "20 Rupees",
+        "volume": "700ml, 1 Ltr, 2 Ltr",
+        "color": "bg-green-200"
+    },
+    {
+        "id": 3,
+        "name": "Pepsi",
+        "price": "20 Rupees",
+        "volume": "700ml, 1 Ltr, 2 Ltr",
+        "color": "bg-purple-200"
+    },
+    {
+        "id": 4,
+        "name": "Mazza",
+        "price": "20 Rupees",
+        "volume": "700ml",
+        "color": "bg-yellow-200"
+    },
+    {
+        "id": 5,
+        "name": "Thums Up",
+        "price": "20 Rupees",
+        "volume": "700ml, 1 Ltr, 2 Ltr",
+        "color": "bg-orange-200"
+    },
+    {
+        "id": 6,
+        "name": "Lassi",
+        "price": "Varies",
+        "volume": "Regular, Sweet",
+        "color": "bg-blue-200"
+    },
+    {
+        "id": 7,
+        "name": "Sting Energy Drink (Red)",
+        "price": "Varies",
+        "volume": "Varies",
+        "color": "bg-gray-200"
+    },
+    {
+        "id": 8,
+        "name": "Sting Energy Drink (Blue)",
+        "price": "Varies",
+        "volume": "Varies",
+        "color": "bg-gray-200"
+    },
+    {
+        "id": 9,
+        "name": "Hell",
+        "price": "Varies",
+        "volume": "250ml, 500ml",
+        "color": "bg-pink-200"
+    },
+    {
+        "id": 10,
+        "name": "Mountain Dew",
+        "price": "20 Rupees",
+        "volume": "700ml, 1 Ltr, 2 Ltr",
+        "color": "bg-green-200"
+    },
+    {
+        "id": 11,
+        "name": "Bailey Premium Original Water",
+        "price": "Varies",
+        "volume": "500ml, 1 Ltr",
+        "color": "bg-yellow-300"
+    },
+    {
+        "id": 12,
+        "name": "Spurz Drink",
+        "price": "Varies",
+        "volume": "Varies",
+        "color": "bg-blue-300"
+    },
+    {
+        "id": 13,
+        "name": "Dairy Milk Celebrations",
+        "price": "Varies",
+        "volume": "Assorted Pack",
+        "color": "bg-purple-200"
+    },
+    {
+        "id": 14,
+        "name": "Sapphire Truffle",
+        "price": "Varies",
+        "volume": "Luxury Chocolate",
+        "color": "bg-yellow-200"
+    },
+    {
+        "id": 15,
+        "name": "Cadbury Fuse",
+        "price": "Varies",
+        "volume": "Nutty and Crunchy",
+        "color": "bg-red-200"
+    },
+    {
+        "id": 16,
+        "name": "5 Star",
+        "price": "Varies",
+        "volume": "Creamy and Chewy",
+        "color": "bg-blue-200"
+    },
+    {
+        "id": 17,
+        "name": "Munch",
+        "price": "Varies",
+        "volume": "Crunchy Wafer",
+        "color": "bg-green-200"
+    },
+    {
+        "id": 18,
+        "name": "Kinder Joy",
+        "price": "Varies",
+        "volume": "Surprise Inside",
+        "color": "bg-pink-200"
+    }
+    
+]
