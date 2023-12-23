@@ -27,7 +27,7 @@ const Layout = () => {
   };
 
   return (
-    <div className="bg-gray-700 min-h-screen font-sans">
+    <div className="bg-gray-700 min-h-screen font-sans overflow-x-hidden">
       <div className="flex fixed z-10 w-full flex-col md:flex-row  justify-between items-center pt-2 bg-gray-900  text-white">
         <div className="text-center md:text-left">
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
@@ -95,7 +95,7 @@ const Layout = () => {
       </div>
 
       {/* Main Content */}
-      <div className="main-content  bg-gray-200">
+      <div className="main-content overflow-x-hidden bg-gray-200">
         <Outlet />
       </div>
       <div>
