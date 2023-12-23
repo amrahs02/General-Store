@@ -73,7 +73,7 @@ const Footer = () => {
       <div className="bg-gray-700 py-4 text-center">
         <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Anushka General Store. All rights reserved.</p>
         <p className="text-sm text-gray-400">Thank you for choosing quality. Visit us again soon!</p>
-        <p className="text-sm text-gray-400">Designed and Developed by <a href="https://www.openai.com" target="_blank" rel="noopener noreferrer" className="font-bold hover:underline">ChatGPT</a></p>
+        <p className="text-sm text-gray-400">Designed and Developed by <a href="https:/sandeepsharma.vercel.app" target="_blank" rel="noopener noreferrer" className="font-bold hover:underline">Sandeep Sharma</a></p>
       </div>
     </footer>
   );
