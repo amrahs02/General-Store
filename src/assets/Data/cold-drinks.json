@@ -4,14 +4,14 @@
         "name": "Sprite",
         "price": "20 Rupees",
         "volume": "700ml, 1 Ltr, 2 Ltr",
-        "color": "bg-blue-200"
+        "color": "bg-blue-300"
     },
     {
         "id": 2,
         "name": "Coca-Cola",
         "price": "20 Rupees",
         "volume": "700ml, 1 Ltr, 2 Ltr",
-        "color": "bg-green-200"
+        "color": "bg-yellow-200"
     },
     {
         "id": 3,
