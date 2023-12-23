@@ -7,17 +7,17 @@ const Contact = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="contact-container p-8 bg-gray-100">
+    <div className="contact-container p-0 bg-gray-100">
        <BackButton/>
 
-      <div className="contact-content bg-white p-8 rounded-lg  text-center">
-        <h1 className="text-4xl font-bold mb-6 text-blue-500  p-4 rounded">
+      <div className="contact-content bg-white p-4 rounded-lg  text-center">
+        <h1 className="text-4xl font-bold mb-6 bg-blue-200 text-blue-500  p-4 rounded">
           Contact Us
         </h1>
 
 
         {/* Text within a Box */}
-        <div className="text-box mt-8 p-8 rounded">
+        <div className="text-box mt-8 p-4 bg-gray-100 rounded">
           <h2 className="text-2xl font-bold mb-4">Welcome to Our Store!</h2>
           <p className="text-gray-700">
             We're excited to serve you in the heart of {shopInfo.district}. Whether you're looking for the latest gadgets or

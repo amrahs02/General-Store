@@ -26,11 +26,11 @@ const ColdDrinkComponent = () => {
   };
 
   return (
-    <div className="cold-drink-container sm:p-8 p-2 bg-white text-gray-800">
+    <div className="cold-drink-container p-0  bg-white text-gray-800">
 
-      <div className="content-container sm:p-8 sm:mt-8 mt-32  p-3 rounded-lg shadow-md text-center  ">
+      <BackButton />
+      <div className="content-container p-4  rounded-lg shadow-lg text-center  ">
         {/* Bulk Order Section */}
-        <BackButton />
 
 
         <div className="color-box bg-blue-200 rounded-lg p-6 mb-8">
@@ -43,11 +43,11 @@ const ColdDrinkComponent = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="mt-8 mb-4">
+        <div className="mt-8 p-1 bg-blue-200 rounded-lg  mb-4">
           <input
             type="text"
             placeholder="Search  for cold drinks..."
-            className="p-2 border w-full sm:w-fit border-gray-300 rounded-md"
+            className="p-2 border w-full sm:w-fit rounded-lg border-gray-300 "
             value={searchInput}
             onChange={handleSearchInputChange}
           />

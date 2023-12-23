@@ -9,10 +9,10 @@ const AdvertisementComponent = () => {
   };
 
   return (
-    <div className="recharge-container sm:p-8 p-4 bg-gray-100 text-gray-800">
+    <div className="recharge-container  p-0 bg-gray-100 text-gray-800">
       <BackButton />
 
-      <div className="content-container bg-white p-4 mt-8 sm:p-8 rounded-lg shadow-md text-center">
+      <div className="content-container bg-white p-4  rounded-lg shadow-md text-center">
         <div className="color-box bg-blue-200 rounded-lg p-6 mb-8">
           <h1 className="text-4xl font-bold text-blue-600 mb-4">
             Exclusive Recharge Offers

@@ -33,21 +33,21 @@ const MainHeading = ({ language, toggleLanguage }) => {
     <>
       <div className="heading m-0 p-0  relative bg-black">
         <Slider ref={sliderRef} {...sliderSettings}>
-          <div className="bg-cover mt-20 bg-center bg-no-repeat relative h-screen">
+          <div className="bg-cover bg-center bg-no-repeat relative h-screen">
             <img
               className='w-screen h-full opacity-60 object-cover '
               src={sprite1}
               alt="Slide 1"
             />
           </div>
-          <div className="bg-cover mt-20 bg-center bg-no-repeat relative  h-screen">
+          <div className="bg-cover  bg-center bg-no-repeat relative  h-screen">
             <img
               className='w-screen h-full opacity-60 object-cover '
-              src={sprite2} 
+              src={sprite2}
               alt="Slide 1"
             />
           </div>
-          <div className="bg-cover mt-20 bg-center  bg-no-repeat relative h-screen">
+          <div className="bg-cover bg-center bg-no-repeat relative h-screen">
             <img
               className='w-screen h-full opacity-60 object-cover '
               src={sprite4}

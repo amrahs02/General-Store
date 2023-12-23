@@ -55,13 +55,13 @@ const Footer = () => {
         <div>
           <h4 className="text-2xl font-bold mb-4">CONNECT WITH US</h4>
           <div className="flex space-x-4 mb-4">
-            <a href="https://www.facebook.com/anushkastore" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <a href="https://www.facebook.com/anushkastore" target="_blank" rel="noopener noreferrer" className="text-white text-sm hover:text-gray-400">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-            <a href="https://twitter.com/anushkastore" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <a href="https://twitter.com/anushkastore" target="_blank" rel="noopener noreferrer" className="text-white text-sm hover:text-gray-400">
               <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
-            <a href="https://www.instagram.com/anushkastore/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <a href="https://www.instagram.com/anushkastore/" target="_blank" rel="noopener noreferrer" className="text-white text-sm hover:text-gray-400">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
           </div>
