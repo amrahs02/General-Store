@@ -5,6 +5,8 @@ const MainHeading = lazy(() => import('./MainHeading'));
 import { SyncLoader } from 'react-spinners'; // Import the SyncLoader from react-spinners
 import CategoryCard from './CategoryCard';
 import UnderConstruction from './Others/UnderConstruction';
+import Reviews from './Reviews';
+import Gallery from './Gallery';
 
 
 const Home = () => (
@@ -17,6 +19,12 @@ const Home = () => (
     </Suspense>
     <Suspense fallback={<LoadingFallback />}>
       <CategoryCard />
+    </Suspense>
+    <Suspense fallback={<LoadingFallback />}>
+      <Reviews />
+    </Suspense>
+    <Suspense fallback={<LoadingFallback />}>
+      <Gallery />
     </Suspense>
     <UnderConstruction />
 

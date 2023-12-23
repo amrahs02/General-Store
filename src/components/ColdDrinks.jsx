@@ -26,13 +26,12 @@ const ColdDrinkComponent = () => {
   };
 
   return (
-    <div className="cold-drink-container p-8 bg-white text-gray-800">
-      <BackButton />
+    <div className="cold-drink-container sm:p-8 p-2 bg-white text-gray-800">
 
-      <div className="content-container sm:p-8 mt-8 rounded-lg shadow-md text-center">
+      <div className="content-container sm:p-8 sm:mt-8 mt-32  p-3 rounded-lg shadow-md text-center  ">
         {/* Bulk Order Section */}
+        <BackButton />
 
-        {/* Search Bar */}
 
         <div className="color-box bg-blue-200 rounded-lg p-6 mb-8">
           <h1 className="text-4xl font-bold text-blue-600 mb-4">
@@ -43,11 +42,12 @@ const ColdDrinkComponent = () => {
           </p>
         </div>
 
-        <div className="mt-8  mb-4">
+        {/* Search Bar */}
+        <div className="mt-8 mb-4">
           <input
             type="text"
-            placeholder="Search  for products..."
-            className="p-2 border  border-gray-300 rounded-md"
+            placeholder="Search  for cold drinks..."
+            className="p-2 border w-full sm:w-fit border-gray-300 rounded-md"
             value={searchInput}
             onChange={handleSearchInputChange}
           />

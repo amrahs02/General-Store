@@ -28,7 +28,7 @@ const Layout = () => {
 
   return (
     <div className="bg-gray-700 min-h-screen font-sans">
-      <div className="flex fixed z-10 w-full flex-col md:flex-row  justify-between items-center pt-2 md:p-4 bg-gray-900  text-white">
+      <div className="flex fixed z-10 w-full flex-col md:flex-row  justify-between items-center pt-2 bg-gray-900  text-white">
         <div className="text-center md:text-left">
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
         </div>
@@ -50,6 +50,22 @@ const Layout = () => {
             <li>
               <Link to="/xerox" className="text-white font-bold hover:text-blue-500">
                 Xerox
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/recharge"
+                className="text-white font-bold  hover:text-blue-500"
+              >
+                Recharge
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/colddrinks"
+                className="text-white font-bold  hover:text-blue-500"
+              >
+                Cold Drinks
               </Link>
             </li>
             <li>

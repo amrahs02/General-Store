@@ -15,22 +15,7 @@
         "description": "Discover unique and authentic items at Sudha Corner. Our collection features handpicked treasures that make thoughtful and memorable gifts.",
         "image": "https://5.imimg.com/data5/NU/LA/GLADMIN-10870697/sudha-healthy-toned-milk.png"
     },
-    {
-        "id": 3,
-        "route": "giftitems",
-        "name": "Gift Items",
-        "color": "bg-gray-700",
-        "description": "Find the perfect gift for any occasion in our Gift Items section. From elegant decor to personalized goodies, we have something special for everyone.",
-        "image": "https://images.pexels.com/photos/264787/pexels-photo-264787.jpeg?cs=srgb&dl=pexels-pixabay-264787.jpg&fm=jpg"
-    },
-    {
-        "id": 4,
-        "route": "stationaryitems",
-        "name": "Stationary Items",
-        "color": "bg-gray-700",
-        "description": "Stay organized and stocked with our quality Stationary Items. Explore a variety of essentials for your workspace and school needs.",
-        "image": "https://cdn.create.vista.com/api/media/small/164806760/stock-photo-composition-of-school-supplies"
-    },
+    
     {
         "id": 5,
         "route": "recharge",
