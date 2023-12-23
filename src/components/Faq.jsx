@@ -12,10 +12,9 @@ const FAQComponent = ({ language, toggleLanguage }) => {
   const getLocalizedString = (obj) => (language === 'english' ? obj.english : obj.hindi);
 
   return (
-    <div className="faq-container p-8 bg-gray-100">
+    <div className="faq-container p-4  bg-gray-100">
+      <div className="faq-content mt-24 sm:mt-12 bg-white font-sans p-8 rounded-lg shadow-md ">
        <BackButton/>
-
-      <div className="faq-content  bg-white font-sans p-8 rounded-lg shadow-md ">
         <h2 className="text-3xl font-bold mb-8">{getLocalizedString(questions.welcome)}</h2>
 
         {questions.qa.map((qa, index) => (
