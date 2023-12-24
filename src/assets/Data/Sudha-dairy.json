@@ -1,0 +1,50 @@
+{
+    "categories": [
+        {
+            "name": "Milk",
+            "products": [
+                {
+                    "name": "Sudha Shakti Milk",
+                    "image": "https://5.imimg.com/data5/NU/LA/GLADMIN-10870697/sudha-healthy-toned-milk.png"
+                }
+            ]
+        },
+        {
+            "name": "Dahi",
+            "products": [
+                {
+                    "name": "Sudha Plain Dahi",
+                    "image": "https://5.imimg.com/data5/PV/EY/GLADMIN-10870697/sudha-dahi-500x500.png"
+                }
+            ]
+        },
+        {
+            "name": "Paneer",
+            "products": [
+                {
+                    "name": "Sudha Fresh Paneer",
+                    "image": "https://dukaan.b-cdn.net/1000x1000/webp/158654/0f5a6f67-ab83-43da-8806-c890d9fa0a13.png"
+                }
+            ]
+        },
+        {
+            "name": "Ghee",
+            "products": [
+                {
+                    "name": "Sudha Pure Ghee",
+                    "image": "https://www.jiomart.com/images/product/original/490240164/sudha-pure-ghee-500-ml-pouch-product-images-o490240164-p490240164-0-202302211419.jpg?im=Resize=(1000,1000)"
+                }
+            ]
+        },
+        {
+            "name": "Rabri",
+            "products": [
+                {
+                    "name": "Sudha Special Rabri",
+                    "image": "https://images.jdmagicbox.com/quickquotes/images_main/sudha-special-372398025-ojeo1.jpg"
+                }
+               
+            ]
+        }
+    ]
+}

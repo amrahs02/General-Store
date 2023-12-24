@@ -76,11 +76,11 @@ const MainHeading = ({ language, toggleLanguage }) => {
               </button>
             </Link>
           </div>
-          {/* <div className=" mt-10">
+          <div className=" mt-10">
             Managed by: <span className='font-bold text-yellow-500'>
               Arun Sharma
             </span>
-          </div> */}
+          </div>
 
         </div>
       </div>

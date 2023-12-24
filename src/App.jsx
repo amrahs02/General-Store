@@ -12,6 +12,7 @@ import GeneralStore from './components/GeneralStore';
 import ColdDrinks from './components/ColdDrinks';
 import StationaryItems from './components/StationaryItems';
 import Recharge from './components/Recharge';
+import ProductPage from './components/ProductPage';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/colddrinks" element={<ColdDrinks />} />
           <Route path="/stationaryitems" element={<StationaryItems />} />
           <Route path="/recharge" element={<Recharge />} />
+          <Route path="/sudhadairy/:categoryName/:productName" element={<ProductPage/>} />
           <Route path='/faq' element={<Faq />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
