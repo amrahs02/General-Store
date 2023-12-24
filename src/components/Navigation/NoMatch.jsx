@@ -13,7 +13,7 @@ const Error404 = () => {
         Go Back
       </button>
       <div className='contact-content bg-white rounded-lg shadow-md text-center' >
-        <div className='text-center min-h-screen  flex items-center justify-center flex-col ' >
+        <div className='text-center p-10  flex items-center justify-center flex-col ' >
           <h1 className="text-4xl font-bold mb-2 text-red-500">404 - Not Found</h1>
           <p className="text-gray-700 mb-6">Sorry, the page you are looking for does not exist.</p>
           {/* You can add additional content or styling as needed */}
