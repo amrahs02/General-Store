@@ -1,7 +1,10 @@
 // AdvertisementComponent.js
 
 import React from 'react';
-import BreadCrumb from './Others/BreadCrumb';
+import BreadCrumb from '../Others/BreadCrumb';
+import Header from '../Others/Header';
+
+
 
 
 const AdvertisementComponent = () => {
@@ -12,6 +15,8 @@ const AdvertisementComponent = () => {
   return (
     <div className="recharge-container  p-0 bg-gray-100 text-gray-800">
       <BreadCrumb/>
+      <Header/>
+      
 
       <div className="content-container bg-white p-4  rounded-lg shadow-md text-center">
         <div className="color-box bg-blue-200 rounded-lg p-6 mb-8">

@@ -1,15 +1,22 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import shopInfo from '../assets/Data/Names.json'; // Adjust the path based on your project structure
-import BreadCrumb from './Others/BreadCrumb';
+import shopInfo from '../../assets/Data/Names.json'; // Adjust the path based on your project structure
+import BreadCrumb from '../Others/BreadCrumb';
 
 
 const Contact = () => {
-  const navigate = useNavigate();
+  const businessHours = [
+    { day: 'Monday', hours: '6:50 AM - 8:30 PM' },
+    { day: 'Tuesday', hours: '6:50 AM - 8:30 PM' },
+    { day: 'Wednesday', hours: '6:50 AM - 8:30 PM' },
+    { day: 'Thursday', hours: '6:50 AM - 8:30 PM' },
+    { day: 'Friday', hours: '6:50 AM - 8:30 PM' },
+    { day: 'Saturday', hours: '6:50 AM - 8:30 PM' },
+    { day: 'Sunday', hours: '7:00 AM - 8:30 PM' },
+  ];
 
   return (
     <div className="contact-container p-0 bg-gray-100">
-      <BreadCrumb/>
+      <BreadCrumb />
 
       <div className="contact-content bg-white p-4 rounded-lg  text-center">
         <h1 className="text-4xl font-bold mb-6 bg-blue-200 text-blue-500  p-4 rounded">
@@ -44,6 +51,21 @@ const Contact = () => {
           </p>
         </div>
 
+
+        {/* Social Media Links */}
+        {/* Business Hours Section */}
+        <div className="business-hours mt-8">
+          <h2 className="text-2xl font-bold mb-4">Business Hours</h2>
+          <ul className="text-gray-700">
+            {businessHours.map((dayInfo) => (
+              <li key={dayInfo.day}>
+                <strong>{dayInfo.day}:</strong> {dayInfo.hours}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+
         {/* Google Maps Embed */}
 
         <div className="google-maps mt-6">
@@ -59,27 +81,7 @@ const Contact = () => {
           ></iframe>
         </div>
 
-        {/* Social Media Links */}
-        <div className="social-media-links mt-6">
-          <p className="text-gray-600">Connect with us on social media:</p>
-          <ul className="list-disc ml-6 text-blue-500">
-            <li>
-              <a href={shopInfo.facebookLink} className="hover:underline" target="_blank" rel="noopener noreferrer">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href={shopInfo.twitterLink} className="hover:underline" target="_blank" rel="noopener noreferrer">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href={shopInfo.instagramLink} className="hover:underline" target="_blank" rel="noopener noreferrer">
-                Instagram
-              </a>
-            </li>
-          </ul>
-        </div>
+
       </div>
     </div>
   );

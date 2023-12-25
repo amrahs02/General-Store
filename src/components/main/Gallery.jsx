@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import bulkShaktiMilk3 from '../assets/images/bulk-shakti-mik3.jpg';
-import bulkSprite from '../assets/images/bulk-sprite.jpg';
-import bulkLassi from '../assets/images/bulk-lassi.jpg';
-import lassi2 from '../assets/images/lassi2.jpg';
-import goldMilk from '../assets/images/gold-milk.jpg';
-import ghee from '../assets/images/ghee.jpg';
-import freeze from '../assets/images/freeze.jpg';
-import freez from '../assets/images/freez.jpg';
-import lassi from '../assets/images/lassi.jpg';
-import milk from '../assets/images/milk.png';
-import paneer from '../assets/images/paneer.png';
-import bulkShaktiMilk from '../assets/images/bulk-shakti-milk.jpg';
-import fridge from '../assets/images/freedge-miscellaneous.jpg';
-import bulkSim from '../assets/images/bulk-sim.jpg';
-import rabri from '../assets/images/surbhi-rabri.png';
-import dairyMilk from '../assets/images/dairy-milk.jpg';
+import bulkShaktiMilk3 from '../../assets/images/bulk-shakti-mik3.jpg';
+import bulkSprite from '../../assets/images/bulk-sprite.jpg';
+import bulkLassi from '../../assets/images/bulk-lassi.jpg';
+import lassi2 from '../../assets/images/lassi2.jpg';
+import goldMilk from '../../assets/images/gold-milk.jpg';
+import ghee from '../../assets/images/ghee.jpg';
+import freeze from '../../assets/images/freeze.jpg';
+import freez from '../../assets/images/freez.jpg';
+import lassi from '../../assets/images/lassi.jpg';
+import milk from '../../assets/images/milk.png';
+import paneer from '../../assets/images/paneer.png';
+import bulkShaktiMilk from '../../assets/images/bulk-shakti-milk.jpg';
+import fridge from '../../assets/images/freedge-miscellaneous.jpg';
+import bulkSim from '../../assets/images/bulk-sim.jpg';
+import rabri from '../../assets/images/surbhi-rabri.png';
+import dairyMilk from '../../assets/images/dairy-milk.jpg';
 
 const shopHeading = "Gallery";
 

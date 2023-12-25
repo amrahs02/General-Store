@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import productsData from '../../assets/Data/cold-drinks.json';
+import Header from '../Others/Header';
 import Breadcrumb from '../Others/BreadCrumb';
 
 const ColdDrinkComponent = () => {
@@ -7,27 +7,12 @@ const ColdDrinkComponent = () => {
     window.open('https://wa.me/918227080520', '_blank');
   };
 
-  // State to hold the filtered products based on search input
-  const [filteredProducts, setFilteredProducts] = useState(productsData);
 
-  // State to hold the user's search input
-  const [searchInput, setSearchInput] = useState('');
-
-  // Function to handle search input change
-  const handleSearchInputChange = (e) => {
-    const input = e.target.value.toLowerCase();
-    setSearchInput(input);
-
-    // Filter products based on the search input
-    const filtered = productsData.filter((product) =>
-      product.name.toLowerCase().includes(input)
-    );
-    setFilteredProducts(filtered);
-  };
 
   return (
     <div className="cold-drink-container p-0  bg-white text-gray-800">
-      <Breadcrumb/>
+      <Breadcrumb />
+      <Header />
       <div className="content-container p-4  rounded-lg shadow-lg text-center  ">
         {/* Bulk Order Section */}
 
@@ -41,20 +26,11 @@ const ColdDrinkComponent = () => {
           </p>
         </div>
 
-        {/* Search Bar */}
-        <div className="mt-8 p-1 bg-blue-200 rounded-lg  mb-4">
-          <input
-            type="text"
-            placeholder="Search  for cold drinks..."
-            className="p-2 border w-full sm:w-fit rounded-lg border-gray-300 "
-            value={searchInput}
-            onChange={handleSearchInputChange}
-          />
-        </div>
+
 
         {/* Display Filtered Products */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {filteredProducts.map((product) => (
+          {productsData.map((product) => (
             <div key={product.id} className={`item ${product.color} rounded-lg p-6`}>
               <p className="font-bold mb-2">{product.name}</p>
               <p className="text-gray-700">{`Price: ${product.price}`}</p>
