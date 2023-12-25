@@ -1,5 +1,5 @@
 import React from 'react';
-import categoriesData from '../assets/Data/category-card';
+import categoriesData from '../../assets/Data/category-card.json';
 import { Link } from 'react-router-dom';
 
 

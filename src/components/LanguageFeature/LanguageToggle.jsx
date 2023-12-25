@@ -1,7 +1,7 @@
 // YourComponent.js
 import React from 'react';
 import { connect } from 'react-redux';
-import { toggleLanguage } from '../actions/languageActions';
+import { toggleLanguage } from '../../actions/languageActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
 

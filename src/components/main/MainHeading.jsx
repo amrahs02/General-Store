@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import sprite1 from '../assets/images/sprite-2.jpg';
-import sprite2 from '../assets/images/sprite-3.jpg';
-import sprite4 from '../assets/images/sprite-4.jpg';
-import { toggleLanguage } from '../actions/languageActions';
+import sprite1 from '../../assets/images/sprite-2.jpg';
+import sprite2 from '../../assets/images/sprite-3.jpg';
+import sprite4 from '../../assets/images/sprite-4.jpg';
+import { toggleLanguage } from '../../actions/languageActions';
 import { connect } from 'react-redux';
 import { useEffect, useRef } from 'react';
 

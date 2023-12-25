@@ -1,6 +1,6 @@
-import namesData from '../assets//Data/Names.json'; // Import the JSON file
-import BreadCrumb from './Others/BreadCrumb';
-
+import namesData from '../../assets/Data/Names.json'; // Import the JSON file
+import BreadCrumb from '../Others/BreadCrumb';
+import Header from '../Others/Header';
 
 const Xerox = () => {
 
@@ -14,8 +14,8 @@ const Xerox = () => {
 
   return (
     <div className="  xerox,-container  p-0 bg-gray-100 text-white">
-      <BreadCrumb/>
-
+      <BreadCrumb />
+      <Header />
       <div className="xerox-content bg-white p-4 rounded-lg shadow-md text-center">
         <h1 className="text-4xl font-bold mb-6 bg-blue-100 text-blue-500  p-4 rounded">
           Welcome to <span className="block">{namesData.shopName}</span>

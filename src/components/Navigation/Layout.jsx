@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import Footer from '../Others/Footer';
+import Footer from '../main/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCartShopping,
@@ -11,8 +11,8 @@ import {
   // faSearch,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
-import Cart from '../Cart';
-import LanguageToggle from '../LanguageToggle';
+import Cart from '../cart/Cart';
+import LanguageToggle from '../LanguageFeature/LanguageToggle';
 
 const Layout = () => {
   const [showModal, setshowModal] = useState(false);
@@ -41,13 +41,6 @@ const Layout = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/sudhadairy"
-                className="text-white font-bold hover:text-blue-500">
-                Sudha Dairy
-              </Link>
-            </li>
-            <li>
               <Link to="/xerox" className="text-white font-bold hover:text-blue-500">
                 Xerox
               </Link>
@@ -70,6 +63,13 @@ const Layout = () => {
             </li>
             <li>
               <Link
+                to="/sudhadairy"
+                className="text-white font-bold hover:text-blue-500">
+                Sudha Dairy
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contact"
                 className="text-white font-bold  hover:text-blue-500"
               >
@@ -87,7 +87,6 @@ const Layout = () => {
           <button className="bg-blue-500 rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
             onClick={toggle}> <FontAwesomeIcon icon={faCartShopping} />
           </button>
-
           <button className="bg-blue-500 sm:hidden rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
             onClick={toggleMobileMenu}> <FontAwesomeIcon icon={faBars} />
           </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import shopData from '../assets/Data/Names.json'; // Adjust the path accordinglyu
-import Breadcrumb from './Others/BreadCrumb';
+import shopData from '../../assets/Data/Names.json'; // Adjust the path accordinglyu
+import Breadcrumb from '../Others/BreadCrumb';
 
 const DiscoverUs = () => {
   const Navigate = useNavigate();

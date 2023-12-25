@@ -1,17 +1,15 @@
-import Home from './components/Home';
-import Contact from './components/Contact';
+import Home from './components/main/Home';
+import Contact from './components/Navigation/Contact';
 import Layout from './components/Navigation/Layout';
-import Xerox from './components/Xerox';
+import Xerox from './components/Navigation/Xerox';
 import SudhaDairy from './components/SudhaDairy/SudhaDairy';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NoMatch from './components/Navigation/NoMatch';
-import DiscoverUs from './components/DiscoverUs';
+import DiscoverUs from './components/main/DiscoverUs';
 import Faq from './components/Others/Faq';
-import GiftItems from './components/GiftItems';
 import GeneralStore from './components/GeneralStore';
 import ColdDrinks from './components/ColdDrinks/ColdDrinks';
-import Recharge from './components/Recharge';
-import ProductPage from './components/SudhaDairy/ProductPage';
+import Recharge from './components//Navigation/Recharge';
 
 
 const App = () => {
@@ -24,11 +22,10 @@ const App = () => {
           <Route path="/sudhadairy" element={<SudhaDairy />} />
           <Route path="/xerox" element={<Xerox />} />
           <Route path="/discoverus" element={<DiscoverUs />} />
-          <Route path="/giftitems" element={<GiftItems />} />
           <Route path="/generalstore" element={<GeneralStore />} />
           <Route path="/colddrinks" element={<ColdDrinks />} />
           <Route path="/recharge" element={<Recharge />} />
-          <Route path="/sudhadairy/:categoryName/:productName" element={<ProductPage/>} />
+          {/* <Route path="/sudhadairy/:categoryName/:productName" element={<ProductPage/>} /> */}
           <Route path='/faq' element={<Faq />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
