@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import shopData from '../assets/Data/Names.json'; // Adjust the path accordinglyu
-import BackButton from './Navigation/BackButton';
+import Breadcrumb from './Others/BreadCrumb';
 
 const DiscoverUs = () => {
   const Navigate = useNavigate();
 
   return (
     <div className="discover-us-container p-8 bg-gray-100">
-       <BackButton/>
+      <Breadcrumb/>
 
       <div className="discover-us-content sm:bg-white p-8 rounded-lg text-center">
         <h1 className="text-4xl font-bold mb-6 text-blue-500  p-4 rounded">

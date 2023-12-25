@@ -2,17 +2,16 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Layout from './components/Navigation/Layout';
 import Xerox from './components/Xerox';
-import SudhaDairy from './components/SudhaDairy';
+import SudhaDairy from './components/SudhaDairy/SudhaDairy';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NoMatch from './components/Navigation/NoMatch';
 import DiscoverUs from './components/DiscoverUs';
-import Faq from './components/Faq';
+import Faq from './components/Others/Faq';
 import GiftItems from './components/GiftItems';
 import GeneralStore from './components/GeneralStore';
-import ColdDrinks from './components/ColdDrinks';
-import StationaryItems from './components/StationaryItems';
+import ColdDrinks from './components/ColdDrinks/ColdDrinks';
 import Recharge from './components/Recharge';
-import ProductPage from './components/ProductPage';
+import ProductPage from './components/SudhaDairy/ProductPage';
 
 
 const App = () => {
@@ -28,7 +27,6 @@ const App = () => {
           <Route path="/giftitems" element={<GiftItems />} />
           <Route path="/generalstore" element={<GeneralStore />} />
           <Route path="/colddrinks" element={<ColdDrinks />} />
-          <Route path="/stationaryitems" element={<StationaryItems />} />
           <Route path="/recharge" element={<Recharge />} />
           <Route path="/sudhadairy/:categoryName/:productName" element={<ProductPage/>} />
           <Route path='/faq' element={<Faq />} />

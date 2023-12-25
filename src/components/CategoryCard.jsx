@@ -2,6 +2,7 @@ import React from 'react';
 import categoriesData from '../assets/Data/category-card';
 import { Link } from 'react-router-dom';
 
+
 const CategoryCard = () => {
     const categories = categoriesData;
 

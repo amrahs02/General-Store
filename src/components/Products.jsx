@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import productData from '../assets/Data/data.json';
 
+
 import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
 
 export default function Products() {

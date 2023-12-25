@@ -1,41 +1,41 @@
 import React, { useState } from 'react';
-import bulkSprite from '../assets/bulk-sprite.jpg';
-import bulkLassi from '../assets/bulk-lassi.jpg';
-import lassi2 from '../assets/lassi2.jpg';
-import goldMilk from '../assets/gold-milk.jpg';
-import ghee from '../assets/ghee.jpg';
-import freeze from '../assets/freeze.jpg';
-import freez from '../assets/freez.jpg';
-import lassi from '../assets/lassi.jpg';
-import milk from '../assets/milk.png';
-import paneer from '../assets/paneer.png';
-import bulkShaktiMilk3 from '../assets/bulk-shakti-mik3.jpg';
-import bulkShaktiMilk from '../assets/bulk-shakti-milk.jpg';
-import fridge from '../assets/freedge-miscellaneous.jpg';
-import bulkSim from '../assets/bulk-sim.jpg';
-import rabri from '../assets/surbhi-rabri.png';
-import dairyMilk from '../assets/dairy-milk.jpg';
+import bulkShaktiMilk3 from '../assets/images/bulk-shakti-mik3.jpg';
+import bulkSprite from '../assets/images/bulk-sprite.jpg';
+import bulkLassi from '../assets/images/bulk-lassi.jpg';
+import lassi2 from '../assets/images/lassi2.jpg';
+import goldMilk from '../assets/images/gold-milk.jpg';
+import ghee from '../assets/images/ghee.jpg';
+import freeze from '../assets/images/freeze.jpg';
+import freez from '../assets/images/freez.jpg';
+import lassi from '../assets/images/lassi.jpg';
+import milk from '../assets/images/milk.png';
+import paneer from '../assets/images/paneer.png';
+import bulkShaktiMilk from '../assets/images/bulk-shakti-milk.jpg';
+import fridge from '../assets/images/freedge-miscellaneous.jpg';
+import bulkSim from '../assets/images/bulk-sim.jpg';
+import rabri from '../assets/images/surbhi-rabri.png';
+import dairyMilk from '../assets/images/dairy-milk.jpg';
 
-const shopHeading = "Explore Our Shop";
+const shopHeading = "Gallery";
 
 const Gallery = () => {
   const allImages = [
-    bulkSprite,
-    rabri,
-    bulkLassi,
-    fridge,
-    lassi2,
+    bulkShaktiMilk,
     goldMilk,
-    ghee,
     freeze,
+    bulkSprite,
+    bulkLassi,
+    lassi2,
+    bulkSim,
+    dairyMilk,
+    bulkShaktiMilk3,
+    rabri,
+    fridge,
+    ghee,
     freez,
     lassi,
     milk,
     paneer,
-    bulkShaktiMilk3,
-    bulkShaktiMilk,
-    bulkSim,
-    dairyMilk,
   ];
 
   const [visibleImages, setVisibleImages] = useState(4);

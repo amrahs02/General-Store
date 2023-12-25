@@ -2,11 +2,14 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import sudhaProducts from '../assets/Data/Sudha-dairy.json';
+import sudhaProducts from '../../assets/Data/Sudha-dairy.json';
+import BreadCrumb from '../Others/BreadCrumb';
+
 
 const SudhaDairySection = () => {
   return (
     <div className="bg-gray-100 p-4 sm:p-24">
+      <BreadCrumb/>
       <h2 className="text-3xl font-bold mb-8 text-center">Explore Sudha Dairy Products</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">

@@ -3,6 +3,8 @@ import { useContext } from 'react'
 import { CartContext } from '../context/cart.jsx'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import BreadCrumb from './Others/BreadCrumb';
+
 
 export default function Cart({ showModal, toggle }) {
 
@@ -48,6 +50,7 @@ export default function Cart({ showModal, toggle }) {
     showModal && (
       <div className="flex-col flex items-center fixed z-10 rounded-lg inset-0 sm:left-2/4 bg-red dark:bg-gray-600 gap-8  p-10  text-black dark:text-white font-normal uppercase text-sm">
         <ToastContainer />
+        <BreadCrumb/>
         <h1 className="text-2xl font-bold">Cart</h1>
         <div className="absolute right-16 top-10">
           <button

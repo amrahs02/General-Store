@@ -1,13 +1,8 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import specialOfferImage from '../assets/special-offer-3.png';
-import aadharCardImage from '../assets/aadhaar-card.png';
-import namesData from '../assets/Data/Names.json'; // Import the JSON file
-import BackButton from './Navigation/BackButton';
+import namesData from '../assets//Data/Names.json'; // Import the JSON file
+import BreadCrumb from './Others/BreadCrumb';
 
 
 const Xerox = () => {
-  const Navigate = useNavigate();
 
   const openWhatsApp = () => {
     window.open('https://wa.me/918227080520', '_blank');
@@ -19,7 +14,7 @@ const Xerox = () => {
 
   return (
     <div className="  xerox,-container  p-0 bg-gray-100 text-white">
-       <BackButton/>
+      <BreadCrumb/>
 
       <div className="xerox-content bg-white p-4 rounded-lg shadow-md text-center">
         <h1 className="text-4xl font-bold mb-6 bg-blue-100 text-blue-500  p-4 rounded">

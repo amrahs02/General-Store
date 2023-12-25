@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import BackButton from './Navigation/BackButton';
-import productsData from '../assets/Data/cold-drinks.json';
+import productsData from '../../assets/Data/cold-drinks.json';
+import Breadcrumb from '../Others/BreadCrumb';
 
 const ColdDrinkComponent = () => {
   const openWhatsApp = () => {
@@ -27,8 +27,7 @@ const ColdDrinkComponent = () => {
 
   return (
     <div className="cold-drink-container p-0  bg-white text-gray-800">
-
-      <BackButton />
+      <Breadcrumb/>
       <div className="content-container p-4  rounded-lg shadow-lg text-center  ">
         {/* Bulk Order Section */}
 

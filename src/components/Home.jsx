@@ -5,7 +5,7 @@ const MainHeading = lazy(() => import('./MainHeading'));
 import { SyncLoader } from 'react-spinners'; // Import the SyncLoader from react-spinners
 import CategoryCard from './CategoryCard';
 import UnderConstruction from './Others/UnderConstruction';
-import Reviews from './Reviews';
+import Reviews from './SudhaDairy/Reviews';
 import Gallery from './Gallery';
 
 

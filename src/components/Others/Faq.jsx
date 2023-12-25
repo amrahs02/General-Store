@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { toggleLanguage } from '../actions/languageActions';
-import data from '../assets/Data/faq-data.json';
+import { toggleLanguage } from '../../actions/languageActions';
+import data from '../../assets/Data/faq-data.json';
 import { useNavigate } from 'react-router-dom';
-import BackButton from './Navigation/BackButton';
+import BreadCrumb from './BreadCrumb';
 
 const FAQComponent = ({ language, toggleLanguage }) => {
   const navigate = useNavigate();
@@ -15,8 +15,7 @@ const FAQComponent = ({ language, toggleLanguage }) => {
 
   return (
     <div className="faq-container p-0 bg-gray-100 min-h-screen">
-      <BackButton/>
-
+      <BreadCrumb/>
       <div className="faq-content bg-white p-2 rounded-lg shadow-md">
         <h2 className="text-3xl font-bold mb-8 text-indigo-600">{getLocalizedString(questions.welcome)}</h2>
 

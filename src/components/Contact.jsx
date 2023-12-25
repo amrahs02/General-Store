@@ -1,14 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import shopInfo from '../assets/Data/Names.json'; // Adjust the path based on your project structure
-import BackButton from './Navigation/BackButton';
+import BreadCrumb from './Others/BreadCrumb';
+
 
 const Contact = () => {
   const navigate = useNavigate();
 
   return (
     <div className="contact-container p-0 bg-gray-100">
-       <BackButton/>
+      <BreadCrumb/>
 
       <div className="contact-content bg-white p-4 rounded-lg  text-center">
         <h1 className="text-4xl font-bold mb-6 bg-blue-200 text-blue-500  p-4 rounded">

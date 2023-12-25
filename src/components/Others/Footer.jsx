@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -7,8 +8,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container sm:mx-auto py-8 grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
         <div className="mb-8 md:mb-0">
-          <h4 className="text-2xl font-bold mb-4">ONLINE SHOPPING</h4>
+          <h4 className="text-2xl font-bold mb-4">USEFUL LINKS</h4>
           <ul>
             <li className="mb-2">
               <Link to="/" className="hover:underline">Home</Link>
@@ -16,12 +18,6 @@ const Footer = () => {
             <li className="mb-2">
               <Link to="/contact" className="hover:underline">Contact Us</Link>
             </li>
-          </ul>
-        </div>
-
-        <div className="mb-8 md:mb-0">
-          <h4 className="text-2xl font-bold mb-4">USEFUL LINKS</h4>
-          <ul>
             <li className="mb-2">
               <Link to="/sitemap" className="hover:underline">Site Map</Link>
             </li>
@@ -31,9 +27,6 @@ const Footer = () => {
         <div className="mb-8 md:mb-0">
           <h4 className="text-2xl font-bold mb-4">CUSTOMER POLICIES</h4>
           <ul>
-            <li className="mb-2">
-              <Link to="/contact" className="hover:underline">Contact Us</Link>
-            </li>
             <li className="mb-2">
               <Link to="/faq" className="hover:underline">FAQ</Link>
             </li>
