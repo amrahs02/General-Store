@@ -16,95 +16,116 @@ const Xerox = () => {
     <div className="  xerox,-container  p-0 bg-gray-100 text-white">
       <BreadCrumb />
       <Header />
-      <div className="xerox-content bg-white p-4 rounded-lg shadow-md text-center">
-        <h1 className="text-4xl font-bold mb-6 bg-blue-100 text-blue-500  p-4 rounded">
+      <div className="xerox-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
+        <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500  p-4 rounded-xl">
           Welcome to <span className="block">{namesData.shopName}</span>
         </h1>
 
-        <p className="text-gray-700 text-lg mb-6 p-4 rounded">
+        <p className="text-gray-300 bg-slate-800 text-lg mb-6 p-4 rounded-xl">
           Discover the power of seamless documentation at{' '}
           <span className="font-bold text-blue-500">{namesData.shopName}</span>. We offer a range of   <span className="text-purple-500">xerox</span>, services with attractive   <span className="text-green-500">discounts</span>, for various documents.
         </p>
 
         {/* Additional Xerox Services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="mb-6 relative p-4 rounded" style={{
-            // backgroundImage: `url(${specialOfferImage})`,
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Our Services</h2>
+
+        <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className=" relative rounded-xl" style={{
             backgroundSize: 'cover',
             minHeight: '200px',
           }}>
-            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-red-100 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded">
-              <p className="text-yellow-500 font-bold mb-2">Special Offer!</p>
-              <p className="text-gray-800 text-xl ">
-                Get a   <span className="text-green-500">discount</span>, on  <span className="text-purple-500">bulk xerox</span>, for educational materials, notes, and study guides. We   <span className="text-purple-500">xerox</span>, any number of copies you want to make your learning experience more convenient.
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+                Document Xerox
+              </p>
+              <p className="text-gray-300 text-xl ">
+               
+                <span className="text-red-500"> Aadhar cards</span>,
+                <span className="text-green-500"> PAN cards</span>,
+                and more.
+              </p>
+            </div>
+          </div>
+          <div className="relative rounded-xl" style={{
+            backgroundSize: 'cover',
+            minHeight: '200px',
+          }}>
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+                Document Xerox
+              </p>
+              <p className="text-gray-300 text-xl ">
+               
+                <span className="text-red-500"> Aadhar cards</span>,
+                <span className="text-green-500"> PAN cards</span>,
+                and more.
               </p>
             </div>
           </div>
 
-          <div className="mb-6 relative p-4  rounded" style={{
-            // backgroundImage: `url(${aadharCardImage})`,
+          <div className=" relative rounded-xl" style={{
             backgroundSize: 'cover',
             minHeight: '200px',
           }}>
-            <div className="absolute top-0 right-0 overflow-hidden bottom-0 left-0 bg-green-100 text-red-800 bg-opacity-70 backdrop-filter backdrop-blur-sm p-6 rounded">
-              <p className="font-bold mb-2 bg-opacity-50 rounded">
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
                 Document Xerox
               </p>
-              <p className="text-gray-800 text-xl ">
-                Need copies of your important documents? We provide   <span className="text-purple-500">xerox</span>, services for documents such as
+              <p className="text-gray-300 text-xl ">
+               
                 <span className="text-red-500"> Aadhar cards</span>,
                 <span className="text-green-500"> PAN cards</span>,
-                <span className="text-yellow-500"> certificates</span>,
-                <span className="text-purple-500"> KYC forms</span>, and more.
-                Fast and reliable service guaranteed.
+                and more.
               </p>
             </div>
           </div>
 
-
-          <div className="mb-6 relative p-4 rounded" style={{
-            // backgroundImage: `url(${aadharCardImage})`,
+          <div className="relative rounded-xl " style={{
             backgroundSize: 'cover',
             minHeight: '200px',
           }}>
-            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-purple-100 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded">
-              <p className="font-bold mb-2 bg-opacity-50 rounded">
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
                 Document Xerox
               </p>
-              <p className="text-gray-800 text-xl ">
-                Need copies of your important documents? We provide   <span className="text-purple-500">xerox</span>, services for documents such as
+              <p className="text-gray-300 text-xl ">
+               
                 <span className="text-red-500"> Aadhar cards</span>,
                 <span className="text-green-500"> PAN cards</span>,
-                <span className="text-yellow-500"> certificates</span>,
-                <span className="text-purple-500"> KYC forms</span>, and more.
-                Fast and reliable service guaranteed.
+                and more.
               </p>
             </div>
           </div>
         </div>
 
         {/* Document Submission Options */}
-        <div className="document-submission mt-8 bg-opacity-25 text-purple-700 p-8 rounded">
-          <h2 className="text-2xl font-bold mb-4">Submit Your Documents</h2>
-          <p className="text-gray-700 mb-4">
-            Choose your preferred method to submit documents:
-          </p>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Preferred method to submit docs</h2>
+        <div className='flex gap-2 '>
+          <div className="document-submission  w-full bg-slate-800 text-purple-700 p-8 rounded-xl">
+            <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
+            <button
+              className="btn bg-blue-500  hover:bg-blue-700 py-3 px-8 m-2  rounded-full text-white"
+              onClick={sendEmail}
+            >
+              via Email
+            </button>
+          </div>
 
-          <button
-            className="btn bg-green-500 hover:bg-green-700 py-3 px-4 m-2  rounded-full text-white mr-4"
-            onClick={openWhatsApp}
-          >
-            Submit via WhatsApp
-          </button>
-
-          <button
-            className="btn bg-blue-500 py-3 px-4  rounded-full hover:bg-blue-700 text-white"
-            onClick={sendEmail}
-          >
-            Submit via Email
-          </button>
+          <div className="document-submission  w-full bg-slate-800 text-purple-700 p-8 rounded-xl">
+            <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
+            <button
+              className="btn bg-green-500 hover:bg-green-700 py-3 px-4 m-2  rounded-full text-white"
+              onClick={openWhatsApp}
+            >
+              via WhatsApp
+            </button>
+          </div>
         </div>
-
+        <section className=' mt-2'>
+          <div className="document-submission  w-full bg-slate-800 text-purple-700 p-8  rounded-xl">
+            <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
+          </div>
+        </section>
 
       </div>
     </div >
