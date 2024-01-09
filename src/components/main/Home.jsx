@@ -5,6 +5,7 @@ import { SyncLoader } from 'react-spinners'; // Import the SyncLoader from react
 import CategoryCard from './CategoryCard';
 import UnderConstruction from '../Others/UnderConstruction';
 import Gallery from './Gallery';
+import UpButton from '../Others/UpButton';
 
 
 const Home = () => (
@@ -24,7 +25,7 @@ const Home = () => (
       <Gallery />
     </Suspense>
     <UnderConstruction />
-
+<UpButton/>
   </div>
 );
 
