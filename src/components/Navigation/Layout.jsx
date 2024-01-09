@@ -27,8 +27,8 @@ const Layout = () => {
   };
 
   return (
-    <div className="bg-gray-700 min-h-screen font-sans overflow-x-hidden">
-      <div className="flex z-10 w-full flex-col md:flex-row p-2  justify-between items-center pt-2 bg-gray-900  text-white">
+    <div className="bg-slate-800  min-h-screen font-sans overflow-x-hidden">
+      <div className="flex z-10 w-full rounded-xl flex-col md:flex-row p-1 justify-between items-center bg-gray-900  text-white">
         <div className="text-center md:text-left">
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
         </div>
@@ -92,9 +92,8 @@ const Layout = () => {
           </button>
         </div>
       </div>
-
       {/* Main Content */}
-      <div className="main-content overflow-x-hidden bg-gray-200">
+      <div className="main-content overflow-x-hidden bg-slate-800">
         <Outlet />
       </div>
       <div>
