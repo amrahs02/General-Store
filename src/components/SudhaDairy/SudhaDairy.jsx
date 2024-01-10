@@ -31,7 +31,6 @@ const SudhaDairySection = () => {
           ))}
         </div>
       </div>
-    </section>
     </>
   );
 };

@@ -1,8 +1,6 @@
 import namesData from '../../assets/Data/Names.json'; // Import the JSON file
 import BreadCrumb from '../Others/BreadCrumb';
 import spriteImage from '../../assets/images/sprite-2.jpg';  // Adjust the path accordingly
-import spriteImage2 from '../../assets/images/sprite-3.jpg';  // Adjust the path accordingly
-import airtel from '../../assets/images/airtel.png';  // Adjust the path accordingly
 
 import Header from '../Others/Header';
 const Xerox = () => {
@@ -74,7 +72,6 @@ const Xerox = () => {
         <div className=" relative rounded-xl my-2" style={{
           backgroundSize: 'cover',
           minHeight: '200px',
-          backgroundImage: `url(${airtel})`,  // Set the background image
         }}>
           <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-300 bg-opacity-90 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
             <p className="font-bold mb-2 bg-opacity-50 rounded-xl">

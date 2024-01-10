@@ -2,7 +2,6 @@ import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import { Person2 } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
 
 
 export default function LabelBottomNavigation() {

@@ -2,7 +2,6 @@ import React from 'react';
 import productsData from '../../assets/Data/cold-drinks.json';
 import Header from '../Others/Header';
 import Breadcrumb from '../Others/BreadCrumb';
-import spriteImage from '../../assets/images/sprite-2.jpg';  // Adjust the path accordingly
 
 const ColdDrinkComponent = () => {
   const openWhatsApp = () => {
@@ -29,10 +28,9 @@ const ColdDrinkComponent = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {productsData.map((product) => (
-            <div key={product.id} className="relative rounded-xl " style={{
+            <div key={product.id} className="relative rounded-xl" style={{
               backgroundSize: 'cover',
               minHeight: '200px',
-              backgroundImage: `url(${spriteImage})`,  // Set the background image
             }}>
               <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-300 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl hover:shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                 <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
