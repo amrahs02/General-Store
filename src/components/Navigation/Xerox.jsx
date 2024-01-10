@@ -18,7 +18,7 @@ const Xerox = () => {
       <BreadCrumb />
       <Header />
       <div className="xerox-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
-        <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500  p-4 rounded-xl">
+        <h1 className="text-4xl font-bold mb-6  text-blue-500  bg-slate-800 p-4  rounded-xl">
           Welcome to <span className="block">{namesData.shopName}</span>
         </h1>
 

@@ -19,7 +19,7 @@ const Contact = () => {
       <BreadCrumb />
       <Header />
 
-      <div className="contact-content bg-slate-700 p-6 rounded-lg text-center">
+      <div className="contact-content bg-slate-700 p-4 rounded-xl text-center">
         <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500 p-4 rounded-xl">
           Contact Us
         </h1>
