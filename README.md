@@ -87,8 +87,8 @@ To contribute or make changes, follow the standard GitHub workflow:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Commit your changes and push to your fork.
-4. Submit a pull request.gi
-
+4. Submit a pull request.
+5. 
 # License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code according to your needs.

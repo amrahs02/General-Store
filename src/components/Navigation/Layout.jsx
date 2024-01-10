@@ -8,7 +8,6 @@ import {
   faCartShopping,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
-import Cart from '../cart/Cart';
 import LanguageToggle from '../LanguageFeature/LanguageToggle';
 import { BottomNavigation } from '@mui/material';
 
@@ -79,7 +78,9 @@ const Layout = () => {
         </div>
         <div className="flex items-center space-x-4">
           <LanguageToggle />
+
           <Cart showModal={showModal} toggle={toggle} />
+
           <button className="bg-blue-500 rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
             onClick={toggle}> <FontAwesomeIcon icon={faCartShopping} />
           </button>
