@@ -4,7 +4,7 @@
         "name": "Cold Drinks",
         "route": "colddrinks",
         "color": "bg-gray-700",
-        "description": "Quench your thirst with our refreshing selection of Cold Drinks.",
+        "description": "Quench your thirst with our refreshed Cold Drinks.",
         "image": "https://as1.ftcdn.net/v2/jpg/04/99/80/72/1000_F_499807265_uszlulkVF96h1bRKizY6Bg5Ljoo2fuPM.jpg"
     },
     {
@@ -12,7 +12,7 @@
         "route": "sudhadairy",
         "name": "Sudha Corner",
         "color": "bg-gray-700",
-        "description": "Discover unique and authentic items at Sudha Corner.",
+        "description": "Discover unique and authentic dairy items at Sudha Corner.",
         "image": "https://5.imimg.com/data5/NU/LA/GLADMIN-10870697/sudha-healthy-toned-milk.png"
     },
     {
@@ -20,15 +20,7 @@
         "route": "recharge",
         "name": "Recharge",
         "color": "bg-gray-700",
-        "description": "Stay connected with our Recharge services. Top up your Jio, Airtel, and other sim cards hassle-free. Stay in touch without interruptions.",
+        "description": "Stay connected with our Recharge services.",
         "image": "https://i.gadgets360cdn.com/large/jio_airtel_vi_vodafone_idea_image_1612358966262.jpg"
-    },
-    {
-        "id": 6,
-        "route": "generalstore",
-        "name": "General Store",
-        "color": "bg-gray-700",
-        "description": "Visit our General Store for all your daily essentials. From groceries to household items, we've got everything you need conveniently in one place.",
-        "image": "https://content.jdmagicbox.com/comp/mumbai/j3/022pxx22.xx22.101220153904.x8j3/catalogue/maharashtra-biscuits-general-stores-mumbai-1iu2cyhnrn.jpg?clr="
     }
 ]

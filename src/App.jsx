@@ -10,7 +10,7 @@ import Faq from './components/Others/Faq';
 import GeneralStore from './components/GeneralStore';
 import ColdDrinks from './components/ColdDrinks/ColdDrinks';
 import Recharge from './components//Navigation/Recharge';
-import SudhaMilk from './components/SudhaDairy/SudhaMilk';
+
 
 const App = () => {
   return (
@@ -25,7 +25,6 @@ const App = () => {
           <Route path="/generalstore" element={<GeneralStore />} />
           <Route path="/colddrinks" element={<ColdDrinks />} />
           <Route path="/recharge" element={<Recharge />} />
-          <Route path="/sudhadairy/sudhamilk" element={<SudhaMilk/>} />
           {/* <Route path="/sudhadairy/:categoryName/:productName" element={<ProductPage/>} /> */}
           <Route path='/faq' element={<Faq />} />
           <Route path="*" element={<NoMatch />} />
