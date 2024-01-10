@@ -6,7 +6,6 @@ import CategoryCard from './CategoryCard';
 import UnderConstruction from '../Others/UnderConstruction';
 import Gallery from './Gallery';
 
-
 const Home = () => (
   <div className="home-container">
     <Suspense fallback={<LoadingFallback />}>
@@ -24,7 +23,6 @@ const Home = () => (
       <Gallery />
     </Suspense>
     <UnderConstruction />
-
   </div>
 );
 

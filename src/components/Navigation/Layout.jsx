@@ -1,18 +1,17 @@
 // Layout.jsx
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Footer from '../main/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCartShopping,
-  // faHeart,
-  // faUser,
-  // faSearch,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
 import Cart from '../cart/Cart';
 import LanguageToggle from '../LanguageFeature/LanguageToggle';
+import { BottomNavigation } from '@mui/material';
+
 
 const Layout = () => {
   const [showModal, setshowModal] = useState(false);
@@ -28,7 +27,7 @@ const Layout = () => {
 
   return (
     <div className="bg-slate-800  min-h-screen font-sans overflow-x-hidden">
-      <div className="flex z-10 w-full rounded-xl flex-col md:flex-row p-1 justify-between items-center bg-gray-900  text-white">
+      <div className="flex z-10 rounded-xl flex-col md:flex-row p-1 justify-between items-center bg-slate-900  text-white">
         <div className="text-center md:text-left">
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
         </div>
@@ -78,12 +77,9 @@ const Layout = () => {
             </li>
           </ul>
         </div>
-
         <div className="flex items-center space-x-4">
           <LanguageToggle />
-
           <Cart showModal={showModal} toggle={toggle} />
-
           <button className="bg-blue-500 rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
             onClick={toggle}> <FontAwesomeIcon icon={faCartShopping} />
           </button>
@@ -92,6 +88,7 @@ const Layout = () => {
           </button>
         </div>
       </div>
+
       {/* Main Content */}
       <div className="main-content overflow-x-hidden bg-slate-800">
         <Outlet />

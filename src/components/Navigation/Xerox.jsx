@@ -1,7 +1,10 @@
 import namesData from '../../assets/Data/Names.json'; // Import the JSON file
 import BreadCrumb from '../Others/BreadCrumb';
-import Header from '../Others/Header';
+import spriteImage from '../../assets/images/sprite-2.jpg';  // Adjust the path accordingly
+import spriteImage2 from '../../assets/images/sprite-3.jpg';  // Adjust the path accordingly
+import airtel from '../../assets/images/airtel.png';  // Adjust the path accordingly
 
+import Header from '../Others/Header';
 const Xerox = () => {
 
   const openWhatsApp = () => {
@@ -13,7 +16,7 @@ const Xerox = () => {
   };
 
   return (
-    <div className="  xerox,-container  p-0 bg-gray-100 text-white">
+    <div className="  xerox-container sm:m-10 m-4 p-0 bg-slate-800 text-white">
       <BreadCrumb />
       <Header />
       <div className="xerox-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
@@ -33,29 +36,14 @@ const Xerox = () => {
           <div className=" relative rounded-xl" style={{
             backgroundSize: 'cover',
             minHeight: '200px',
+            backgroundImage: `url(${spriteImage})`,  // Set the background image
           }}>
-            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
-              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-300 bg-opacity-90 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl" >
                 Document Xerox
               </p>
               <p className="text-gray-300 text-xl ">
-               
-                <span className="text-red-500"> Aadhar cards</span>,
-                <span className="text-green-500"> PAN cards</span>,
-                and more.
-              </p>
-            </div>
-          </div>
-          <div className="relative rounded-xl" style={{
-            backgroundSize: 'cover',
-            minHeight: '200px',
-          }}>
-            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
-              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
-                Document Xerox
-              </p>
-              <p className="text-gray-300 text-xl ">
-               
+
                 <span className="text-red-500"> Aadhar cards</span>,
                 <span className="text-green-500"> PAN cards</span>,
                 and more.
@@ -66,13 +54,14 @@ const Xerox = () => {
           <div className=" relative rounded-xl" style={{
             backgroundSize: 'cover',
             minHeight: '200px',
+            backgroundImage: `url(${spriteImage})`,  // Set the background image
           }}>
-            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-300 bg-opacity-90 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
               <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
                 Document Xerox
               </p>
               <p className="text-gray-300 text-xl ">
-               
+
                 <span className="text-red-500"> Aadhar cards</span>,
                 <span className="text-green-500"> PAN cards</span>,
                 and more.
@@ -80,28 +69,30 @@ const Xerox = () => {
             </div>
           </div>
 
-          <div className="relative rounded-xl " style={{
-            backgroundSize: 'cover',
-            minHeight: '200px',
-          }}>
-            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
-              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
-                Document Xerox
-              </p>
-              <p className="text-gray-300 text-xl ">
-               
-                <span className="text-red-500"> Aadhar cards</span>,
-                <span className="text-green-500"> PAN cards</span>,
-                and more.
-              </p>
-            </div>
+        </div>
+            
+        <div className=" relative rounded-xl my-2" style={{
+          backgroundSize: 'cover',
+          minHeight: '200px',
+          backgroundImage: `url(${airtel})`,  // Set the background image
+        }}>
+          <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-300 bg-opacity-90 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+            <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+              Document Xerox
+            </p>
+            <p className="text-gray-300 text-xl ">
+
+              <span className="text-red-500"> Aadhar cards</span>,
+              <span className="text-green-500"> PAN cards</span>,
+              and more.
+            </p>
           </div>
         </div>
 
         {/* Document Submission Options */}
         <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Preferred method to submit docs</h2>
         <div className='flex gap-2 '>
-          <div className="document-submission  w-full bg-slate-800 text-purple-700 p-8 rounded-xl">
+          <div className="document-submission  w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
             <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
             <button
               className="btn bg-blue-500  hover:bg-blue-700 py-3 px-8 m-2  rounded-full text-white"
@@ -111,7 +102,7 @@ const Xerox = () => {
             </button>
           </div>
 
-          <div className="document-submission  w-full bg-slate-800 text-purple-700 p-8 rounded-xl">
+          <div className="document-submission  w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
             <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
             <button
               className="btn bg-green-500 hover:bg-green-700 py-3 px-4 m-2  rounded-full text-white"
@@ -121,11 +112,7 @@ const Xerox = () => {
             </button>
           </div>
         </div>
-        <section className=' mt-2'>
-          <div className="document-submission  w-full bg-slate-800 text-purple-700 p-8  rounded-xl">
-            <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
-          </div>
-        </section>
+
 
       </div>
     </div >

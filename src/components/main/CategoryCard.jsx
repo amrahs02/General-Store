@@ -19,20 +19,19 @@ const CategoryCard = () => {
                                 key={category.id}
                                 className={`${category.color} p-16 shadow-2xl rounded-xl text-white transition-transform transform`}
                             >
-
                                 <h3 className="text-4xl my-3 font-semibold">{category.name}</h3>
                                 <p className="text-xl ">
                                     {category.description}
                                 </p>
                                 <Link to={`/${category.route.toLowerCase()}`}>
-                                    <button className=" text-blue-500  my-6 hover:underline rounded-2xl font-bold text-sm">
+                                    <button className=" text-blue-500  my-6 hover:underline text-lg rounded-xl font-bold">
                                         Learn more
                                     </button>
                                 </Link>
                                 <img
                                     src={`${category.image}`}
                                     alt={category.name}
-                                    className=" rounded-xl  object-cover w-full sm:h-96"
+                                    className=" aspect-square  rounded-xl  object-cover w-full sm:h-96"
                                 />
                             </div>
                         </Link>

@@ -1,74 +1,99 @@
-// AdvertisementComponent.js
+// Recharge.jsx
 
-import React from 'react';
 import BreadCrumb from '../Others/BreadCrumb';
 import Header from '../Others/Header';
 
-
-
-
-const AdvertisementComponent = () => {
+const Recharge = () => {
   const openWhatsApp = () => {
     window.open('https://wa.me/918227080520', '_blank');
   };
 
   return (
-    <div className="recharge-container  p-0 bg-gray-100 text-gray-800">
-      <BreadCrumb/>
-      <Header/>
-      
+    <div className="recharge-container p-0 m-4 sm:m-10 bg-slate-800 text-white">
+      <BreadCrumb />
+      <Header />
 
-      <div className="content-container bg-white p-4  rounded-lg shadow-md text-center">
-        <div className="color-box bg-blue-200 rounded-lg p-6 mb-8">
-          <h1 className="text-4xl font-bold text-blue-600 mb-4">
-            Exclusive Recharge Offers
-          </h1>
-          <p className="text-gray-600 text-lg">
-            Recharge with us and enjoy exclusive benefits on Jio, Airtel, and Vi networks. Don't miss out on our special offers available from 7 AM to 9 PM daily!
-          </p>
-        </div>
+      <div className="recharge-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
+        <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500 p-4 rounded-xl">
+          Exclusive Recharge Offers
+        </h1>
+
+        <p className="text-gray-300 bg-slate-800 text-lg mb-6 p-4 rounded-xl">
+          Recharge with us and enjoy exclusive benefits on Jio, Airtel, and Vi networks. Don't miss out on our special offers available from 7 AM to 9 PM daily!
+        </p>
 
         {/* Recharge Offers */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Jio Recharge Offer */}
-          <div className="color-box bg-red-100 rounded-lg p-6">
-            <p className="text-red-600 font-bold mb-2">Jio Recharge Offer</p>
-            <p className="text-gray-700 text-xl">
-              Enjoy exclusive benefits on Jio recharges between 7 AM and 9 PM. Don't miss out on these exciting offers!
-            </p>
-          </div>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Recharge Offers</h2>
 
-          {/* Airtel Recharge Offer */}
-          <div className="color-box bg-green-100 rounded-lg p-6">
-            <p className="font-bold mb-2 text-green-600">Airtel Recharge Offer</p>
-            <p className="text-gray-700 text-xl">
-              Avail special benefits on Airtel recharges during the specified time window. Recharge now and save big!
-            </p>
+        <div className="">
+          {/* Jio Recharge Offer */}
+          <div className="relative rounded-xl" style={{
+            backgroundSize: 'cover',
+            minHeight: '200px',
+          }}>
+            <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-red-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+                Jio Recharge Offer
+              </p>
+              <p className="text-gray-300 text-xl">
+                Enjoy exclusive benefits on Jio recharges between 7 AM and 9 PM. Don't miss out on these exciting offers!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Airtel Recharge Offer */}
+
+        <div className='flex w-full gap-4 ' >
+          <div className="relative rounded-xl" style={{
+            backgroundSize: 'cover',
+            minHeight: '200px',
+          }}>
+            <div className="mt-4 top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-green-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+                Airtel Recharge Offer
+              </p>
+              <p className="text-gray-300 text-xl">
+                Avail special benefits on Airtel recharges during the specified time window. Recharge now and save big!
+              </p>
+            </div>
           </div>
 
           {/* Vi Recharge Offer */}
-          <div className="color-box bg-purple-100 rounded-lg p-6">
-            <p className="font-bold mb-2 text-purple-600">Vi Recharge Offer</p>
-            <p className="text-gray-700 text-xl">
-              Exclusive offers on Vi recharges from 7 AM to 9 PM every day! Recharge now and enjoy the perks.
+          <div className="relative rounded-xl" style={{
+            backgroundSize: 'cover',
+            minHeight: '200px',
+          }}>
+            <div className="mt-4 top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-purple-600 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+              <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+                Vi Recharge Offer
+              </p>
+              <p className="text-gray-300 text-xl">
+                Exclusive offers on Vi recharges from 7 AM to 9 PM every day! Recharge now and enjoy the perks.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* SIM Card Special */}
+        <h2 className='text-gray-100 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Get a New SIM Card</h2>
+        <div className="relative rounded-xl" style={{
+          backgroundSize: 'cover',
+          minHeight: '200px',
+        }}>
+          <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-700 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+            <p className="font-bold text-gray-300 mb-2 bg-opacity-50 rounded-xl">
+              Get a New SIM Card
+            </p>
+            <p className="text-gray-300 text-xl">
+              Purchase a new SIM card with data and unlimited calls for 30 days absolutely free! Limited-time offer.
             </p>
           </div>
         </div>
 
-        {/* SIM Card Special */}
-        <div className="color-box bg-gray-200 rounded-lg p-6 mt-8">
-          <h2 className="text-2xl font-bold mb-4">Get a New SIM Card</h2>
-          <p className="text-gray-700 mb-4">
-            Purchase a new SIM card with data and unlimited calls for 30 days absolutely free! Limited-time offer.
-          </p>
-        </div>
-
         {/* Recharge from Home */}
-        <div className="color-box bg-gray-200 rounded-lg p-6 mt-8">
-          <h2 className="text-2xl font-bold mb-4">Recharge from Home</h2>
-          <p className="text-gray-700 mb-4">
-            Recharge from the comfort of your home! Simply send a screenshot of your payment to our WhatsApp number +91-8227080520 between 7 AM to 9 PM daily.
-          </p>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Recharge from Home</h2>
+        <div className="document-submission w-full bg-slate-800 text-green-700 p-8 rounded-xl">
+          <h2 className="text-xl font-bold mb-4">Recharge from Home</h2>
           <button
             className="btn bg-green-500 hover:bg-green-700 py-3 px-4 m-2 rounded-full text-white"
             onClick={openWhatsApp}
@@ -78,23 +103,36 @@ const AdvertisementComponent = () => {
         </div>
 
         {/* Additional Content */}
-        <div className="color-box bg-gray-200 rounded-lg p-6 mt-8">
-          <h2 className="text-2xl font-bold mb-4">More Services Await You</h2>
-          <p className="text-gray-700 mb-4">
-            Explore additional services such as bill payments, mobile top-ups, and more. We provide hassle-free solutions to meet all your communication needs.
-          </p>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>More Services Await You</h2>
+        <div className="relative rounded-xl" style={{
+          backgroundSize: 'cover',
+          minHeight: '200px',
+        }}>
+          <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-700 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+            <h2 className="text-xl font-bold text-gray-300 mb-4">More Services Await You</h2>
+            <p className="text-gray-300 mb-4">
+              Explore additional services such as bill payments, mobile top-ups, and more. We provide hassle-free solutions to meet all your communication needs.
+            </p>
+          </div>
         </div>
 
         {/* Note about the Offer */}
-        <div className="color-box bg-gray-200 rounded-lg p-6 mt-8">
-          <h2 className="text-2xl font-bold mb-4">Important Note</h2>
-          <p className="text-gray-700 mb-4">
-            The mentioned offer is a company service for hassle-free recharges on Jio, Airtel, and Vi networks from 7 AM to 9 PM daily. It does not include additional discounts.
-          </p>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Important Note</h2>
+        <div className="relative rounded-xl" style={{
+          backgroundSize: 'cover',
+          minHeight: '200px',
+        }}>
+          <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-700 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl">
+            <h2 className="text-xl font-bold text-gray-300 mb-4">Important Note</h2>
+            <p className="text-gray-300 mb-4">
+              The mentioned offer is a company service for hassle-free recharges on Jio, Airtel, and Vi networks from 7 AM to 9 PM daily. It does not include additional discounts.
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   );
 };
 
-export default AdvertisementComponent;
+export default Recharge;

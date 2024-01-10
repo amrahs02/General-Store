@@ -7,7 +7,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="contact-container p-8 bg-slate-700">\
+    <div className="contact-container p-8 bg-slate-700">
       <BreadCrumb />
       <div>this is page is in Under Construction</div>
 

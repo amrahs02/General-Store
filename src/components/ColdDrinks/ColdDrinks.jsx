@@ -1,49 +1,61 @@
+import React from 'react';
 import productsData from '../../assets/Data/cold-drinks.json';
 import Header from '../Others/Header';
 import Breadcrumb from '../Others/BreadCrumb';
+import spriteImage from '../../assets/images/sprite-2.jpg';  // Adjust the path accordingly
 
 const ColdDrinkComponent = () => {
   const openWhatsApp = () => {
     window.open('https://wa.me/918227080520', '_blank');
   };
 
-
-
   return (
-    <div className="cold-drink-container p-0  bg-white text-gray-800">
+    <div className="cold-drink-container sm:m-10 m-4 p-0 bg-slate-800 text-white">
       <Breadcrumb />
       <Header />
-      <div className="content-container p-4  rounded-lg shadow-lg text-center  ">
-        {/* Bulk Order Section */}
+      <div className="cold-drink-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
+        <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500 p-4 rounded-xl">
+          Explore Our Refreshing Collection at{' '}
+          <span className="block">Your Cold Drinks Shop</span>
+        </h1>
 
-
-        <div className="color-box bg-blue-200 rounded-lg p-6 mb-8">
-          <h1 className="text-4xl font-bold text-blue-600 mb-4">
-            Explore Our Refreshing Collection
-          </h1>
-          <p className="text-gray-600 text-lg">
-            Discover a variety of cold drinks, chocolates, and more. Special offers available from 7 AM to 9 PM daily!
-          </p>
-        </div>
-
-
+        <p className="text-gray-300 bg-slate-800 text-lg mb-6 p-4 rounded-xl">
+          Discover a variety of cold drinks, chocolates, and more. Special offers available from 7 AM to 9 PM daily at{' '}
+          <span className="font-bold text-blue-500">Your Cold Drinks Shop</span>.
+        </p>
 
         {/* Display Filtered Products */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Our Collection</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {productsData.map((product) => (
-            <div key={product.id} className={`item ${product.color} rounded-lg p-6`}>
-              <p className="font-bold mb-2">{product.name}</p>
-              <p className="text-gray-700">{`Price: ${product.price}`}</p>
-              <p className="text-gray-700">{`Volume: ${product.volume}`}</p>
+            <div key={product.id} className="relative rounded-xl " style={{
+              backgroundSize: 'cover',
+              minHeight: '200px',
+              backgroundImage: `url(${spriteImage})`,  // Set the background image
+            }}>
+              <div className="absolute top-0 right-0 bottom-0 overflow-hidden left-0 bg-slate-800 text-gray-300 bg-opacity-80 backdrop-filter backdrop-blur-sm p-6 rounded-xl hover:shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                <p className="font-bold mb-2 bg-opacity-50 rounded-xl">
+                  {product.name}
+                </p>
+                <p className="text-gray-300 text-xl">
+                  Price: {product.price}
+                </p>
+                <p className="text-gray-300 text-xl">
+                  Volume: {product.volume}
+                </p>
+              </div>
             </div>
           ))}
-        </div>
+      </div>
 
-        {/* Special Event Orders Section */}
-        <div className="color-box bg-gray-200 rounded-lg p-6 mt-8">
-          <h2 className="text-2xl font-bold mb-4">Special Event Orders</h2>
-          <p className="text-gray-700 mb-4">
-            Planning a wedding, birthday, or another event? We offer special discounts on bulk orders for cold drinks. Contact us to customize your order and get the best deals for your special occasion!
+      {/* Special Event Orders Section */}
+      <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Special Event Orders</h2>
+      <div className='flex gap-2'>
+        <div className="document-submission w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
+          <h2 className="text-xl font-bold mb-4">Bulk Orders for Events</h2>
+          <p className="text-gray-300 mb-4">
+            Planning a wedding, birthday, or another event? Avail special discounts on bulk orders for cold drinks. Contact us to customize your order and get the best deals for your special occasion!
           </p>
           <button
             className="btn bg-blue-500 hover:bg-blue-700 py-3 px-4 m-2 rounded-full text-white"
@@ -54,6 +66,7 @@ const ColdDrinkComponent = () => {
         </div>
       </div>
     </div>
+    </div >
   );
 };
 
