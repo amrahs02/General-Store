@@ -83,9 +83,7 @@ const Layout = () => {
           <button className="bg-blue-500 rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
             onClick={toggle}> <FontAwesomeIcon icon={faCartShopping} />
           </button>
-          <button className="bg-blue-500 sm:hidden rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
-            onClick={toggleMobileMenu}> <FontAwesomeIcon icon={faBars} />
-          </button>
+          
         </div>
       </div>
 
