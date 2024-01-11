@@ -14,18 +14,18 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation className='!bg-slate-900 p-8 w-full fixed bottom-0' showLabels value={value} onChange={handleChange}>
-      <Link to='/' className='relative bottom-10  text-gray-300'>
+    <BottomNavigation className='!bg-slate-600 pt-6 rounded-t-xl w-full fixed bottom-0' showLabels value={value} onChange={handleChange}>
+      <Link to='/' className='relative bottom-10 text-gray-300'>
         <BottomNavigationAction
           label="Home"
           icon={
-            <Link to="/" className='text-gray-300  hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+            <Link to="/" className=' text-gray-300 hover:bg-gray-600  active:bg-slate-600 px-4 py-1 rounded-full '>
               <Home />
               <h5>Home</h5>
             </Link>}
         />
       </Link>
-      <Link to='/sudhadairy' className='relative bottom-10  text-gray-300'>
+      <Link to='/sudhadairy' className='relative bottom-10 text-gray-300'>
         <BottomNavigationAction
           label="Sudha"
           icon={
@@ -59,17 +59,7 @@ export default function LabelBottomNavigation() {
             </Link>}
         />
       </Link>
-      <Link to='/recharge' className='relative bottom-10'>
-        <BottomNavigationAction
-          label={`Recharge`}
-          icon={
-            <Link to="/recharge" className='text-gray-300 hover:bg-gray-600 active:bg-slate-600  active:bg-slate-00 px-4 py-1  rounded-full '>
-              <PhoneAndroid  />
-              <h5 >Recharge</h5>
-            </Link>
-          }
-        />
-      </Link>
+
     </BottomNavigation>
   );
 }
