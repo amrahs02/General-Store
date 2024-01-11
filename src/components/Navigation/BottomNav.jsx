@@ -14,44 +14,62 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation showLabels sx={{padding: '35px', width: '100%', position: 'fixed', bottom: '0', backgroundColor: 'slategray' }} value={value} onChange={handleChange}>
-      <BottomNavigationAction
-        label="Home"
-        icon={
-          <Link to="/" className='text-gray-700  hover:bg-gray-600 px-4 py-1 rounded-full '>
-            <Home />
-          </Link>}
-      />
-      <BottomNavigationAction
-        label="Sudha"
-        icon={
-          <Link to="/sudhadairy" className='text-gray-700 hover:bg-gray-600 px-4 py-1 rounded-full '>
-            <Store />
-          </Link>}
-      />
-      <BottomNavigationAction
-        label="Print"
-        icon={
-          <Link to="/xerox" className='text-gray-700  hover:bg-gray-600 px-4 py-1 rounded-full '>
-            <Print />
-          </Link>}
-      />
-      <BottomNavigationAction
-        label="Drinks"
-        icon={
-          <Link to="/colddrinks" className='text-gray-700  hover:bg-gray-600 px-4 py-1 rounded-full '>
-            <LocalDrink
-              sx={{}}
-            />
-          </Link>}
-      />
-      <BottomNavigationAction
-        label="Recharge"
-        icon={
-          <Link to="/recharge" className='text-gray-700  hover:bg-gray-600 px-4 py-1 rounded-full '>
-            <PhoneAndroid />
-          </Link>}
-      />
+    <BottomNavigation className='!bg-slate-900 p-8 w-full fixed bottom-0' showLabels value={value} onChange={handleChange}>
+      <Link to='/' className='relative bottom-10  text-gray-300'>
+        <BottomNavigationAction
+          label="Home"
+          icon={
+            <Link to="/" className='text-gray-300  hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+              <Home />
+              <h5>Home</h5>
+            </Link>}
+        />
+      </Link>
+      <Link to='/sudhadairy' className='relative bottom-10  text-gray-300'>
+        <BottomNavigationAction
+          label="Sudha"
+          icon={
+            <Link to="/sudhadairy" className='text-gray-300 hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+              <Store />
+              <h5>Sudha</h5>
+
+            </Link>}
+        />
+      </Link>
+      <Link to='/xerox' className='relative bottom-10  text-gray-300'>
+        <BottomNavigationAction
+          label="Print"
+          icon={
+            <Link to="/xerox" className='text-gray-300  hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+              <Print />
+              <h5>Print</h5>
+
+            </Link>}
+        />
+      </Link>
+      <Link to='/colddrinks' className='relative bottom-10  text-gray-300'>
+        <BottomNavigationAction
+          label="Drinks"
+          icon={
+            <Link to="/colddrinks" className='text-gray-300  hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+              <LocalDrink
+              />
+              <h5>Drink</h5>
+
+            </Link>}
+        />
+      </Link>
+      <Link to='/recharge' className='relative bottom-10'>
+        <BottomNavigationAction
+          label={`Recharge`}
+          icon={
+            <Link to="/recharge" className='text-gray-300 hover:bg-gray-600 active:bg-slate-600  active:bg-slate-00 px-4 py-1  rounded-full '>
+              <PhoneAndroid  />
+              <h5 >Recharge</h5>
+            </Link>
+          }
+        />
+      </Link>
     </BottomNavigation>
   );
 }
