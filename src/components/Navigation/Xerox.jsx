@@ -92,7 +92,7 @@ const Xerox = () => {
           <div className="document-submission  w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
             <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
             <button
-              className="btn bg-blue-500  hover:bg-blue-700 py-3 px-8 m-2  rounded-full text-white"
+              className="btn bg-blue-500  hover:bg-blue-700 py-2 px-4   rounded-full text-white"
               onClick={sendEmail}
             >
               via Email
@@ -102,7 +102,7 @@ const Xerox = () => {
           <div className="document-submission  w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
             <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
             <button
-              className="btn bg-green-500 hover:bg-green-700 py-3 px-4 m-2  rounded-full text-white"
+              className="btn bg-green-500 hover:bg-green-700 py-2 px-2  rounded-full text-white"
               onClick={openWhatsApp}
             >
               via WhatsApp
