@@ -19,7 +19,7 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction
           label="Home"
           icon={
-            <Link to="/" className=' text-gray-300 hover:bg-gray-600  active:bg-slate-600 px-4 py-1 rounded-full '>
+            <Link to="/" className=' text-gray-300 hover:bg-gray-800 active:bg-slate-800 px-5 my-1 rounded-full '>
               <Home />
               <h5>Home</h5>
             </Link>}
@@ -29,7 +29,7 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction
           label="Sudha"
           icon={
-            <Link to="/sudhadairy" className='text-gray-300 hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+            <Link to="/sudhadairy" className='text-gray-300 hover:bg-gray-800 active:bg-slate-800 px-5 my-1   rounded-full '>
               <Store />
               <h5>Sudha</h5>
 
@@ -40,7 +40,7 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction
           label="Print"
           icon={
-            <Link to="/xerox" className='text-gray-300  hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+            <Link to="/xerox" className='text-gray-300  hover:bg-gray-800 active:bg-slate-800 px-5 my-1 rounded-full'>
               <Print />
               <h5>Print</h5>
 
@@ -51,7 +51,7 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction
           label="Drinks"
           icon={
-            <Link to="/colddrinks" className='text-gray-300  hover:bg-gray-600 active:bg-slate-600 px-4 py-1 rounded-full '>
+            <Link to="/colddrinks" className='text-gray-300  hover:bg-gray-800 active:bg-slate-800 px-5 my-1 rounded-full '>
               <LocalDrink
               />
               <h5>Drink</h5>
