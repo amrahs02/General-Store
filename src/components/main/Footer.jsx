@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-700 rounded-s-3xl rounded-e-3xl text-white">
+    <footer className="bg-slate-700 rounded-s-3xl mb-16 rounded-e-3xl text-white">
       <div className="container sm:mx-auto py-8 grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-2">
 
         <div className="mb-8 md:mb-0">
@@ -47,13 +47,13 @@ const Footer = () => {
         <div>
           <h4 className="text-2xl font-bold mb-4">CONNECT</h4>
           <div className="flex space-x-4 mb-4">
-            <a href="https://www.facebook.com/anushkastore" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://twitter.com/anushkastore" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://www.instagram.com/anushkastore/" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
+            <a href="https://www.instagram.com//" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>

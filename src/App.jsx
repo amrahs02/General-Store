@@ -10,6 +10,7 @@ import Faq from './components/Others/Faq';
 import GeneralStore from './components/GeneralStore';
 import ColdDrinks from './components/ColdDrinks/ColdDrinks';
 import Recharge from './components//Navigation/Recharge';
+import BottomNav from './components/Navigation/BottomNav';
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
+      <BottomNav />
     </BrowserRouter>
   );
 };
