@@ -14,7 +14,7 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation className='!bg-slate-600 pt-6 rounded-t-xl w-full fixed bottom-0' showLabels value={value} onChange={handleChange}>
+    <BottomNavigation className='sm:!hidden !bg-slate-600 pt-6 rounded-t-xl w-full fixed bottom-0' showLabels value={value} onChange={handleChange}>
       <Link to='/' className='relative bottom-10 text-gray-300'>
         <BottomNavigationAction
           label="Home"
