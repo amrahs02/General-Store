@@ -9,7 +9,6 @@ import {
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
 import LanguageToggle from '../LanguageFeature/LanguageToggle';
-import { BottomNavigation } from '@mui/material';
 
 
 const Layout = () => {
@@ -31,7 +30,7 @@ const Layout = () => {
           <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
         </div>
 
-        <div className=" md:mb-0">
+        <div className="md:mb-0 ">
           <ul className={`flex ${showMobileMenu ? 'flex-col' : 'md:flex-row'} p-4  items-center sm:flex-row sm:flex  px-2 space-y-2 md:space-x-4 md:space-y-0 ${showMobileMenu ? 'block' : 'hidden'}`}>
             <li>
               <Link to="/" className="text-white font-bold hover:text-blue-500 ">

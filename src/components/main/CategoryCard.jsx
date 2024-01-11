@@ -17,7 +17,7 @@ const CategoryCard = () => {
                         <Link key={category.id} to={`/${category.route.toLowerCase()}`}>
                             <div
                                 key={category.id}
-                                className={`${category.color} p-16 shadow-2xl rounded-xl text-white transition-transform transform`}
+                                className=" bg-slate-700 p-16 shadow-2xl rounded-xl text-white transition-transform transform"
                             >
                                 <h3 className="text-3xl my-3 font-semibold">{category.name}</h3>
                                 <p className="text-2xl font-bold      ">
