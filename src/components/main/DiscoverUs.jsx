@@ -7,10 +7,10 @@ const DiscoverUs = () => {
   const Navigate = useNavigate();
 
   return (
-    <div className="discover-us-container p-4   bg-slate-800">
+    <div className="discover-us-container sm:p-10 ">
       <Breadcrumb />
 
-      <div className="discover-us-content bg-slate-700 p-4 my-4 rounded-xl text-center">
+      <div className="discover-us-content my-4 rounded-xl text-center">
         <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500  p-4 rounded-xl">
           <span className='text-sm'>Welcome to</span> <span className="block">{shopData.shopName}</span>
         </h1>
