@@ -9,11 +9,11 @@ const Recharge = () => {
   };
 
   return (
-    <div className="recharge-container p-0 m-4 sm:m-10 bg-slate-800 text-white">
+    <div className="recharge-container p-0 m-4 sm:m-10  text-white">
       <BreadCrumb />
       <Header />
 
-      <div className="recharge-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
+      <div className="recharge-content  rounded-xl shadow-md text-center">
         <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500 p-4 rounded-xl">
           Exclusive Recharge Offers
         </h1>

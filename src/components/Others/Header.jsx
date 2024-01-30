@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <>
             <div className='bg-slate-700 my-4 flex justify-center items-center rounded-xl' >
-                <div className="heading m-4 rounded-xl ">
+                <div className="heading rounded-xl ">
                     <div className="h-56">
                         <img
                             className='w-screen rounded-xl h-full  object-cover '
