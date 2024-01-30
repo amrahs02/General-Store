@@ -45,17 +45,17 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container text-center rounded-xl bg-gray-800 ">
-      <h2 className="mb-8 text-center text-3xl text-white font-bold p-8 m-4 rounded-xl  bg-slate-700 animate__animated animate__fadeInDown">
+    <div className="gallery-container text-center rounded-xl bg-gray-700 ">
+      <h2 className="text-center text-3xl text-white font-bold mt-6 p-4 rounded-xl  bg-slate-800 ">
         {shopHeading}
       </h2>
-      <div className="w-fit p-2 m-4 sm:px-44  grid grid-cols-1 rounded-xl sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="w-fit mt-2 sm:px-44  grid grid-cols-1 rounded-xl sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
         {allImages.slice(0, visibleImages).map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Shop Image ${index + 1}`}
-            className="w-full rounded-xl h-64 object-cover p-4  bg-slate-700 shadow-md transition-transform transform hover:scale-105 animate__animated animate__fadeIn"
+            className="w-full rounded-xl h-64 object-cover bg-slate-800 shadow-md transition-transform transform hover:scale-105 animate__animated animate__fadeIn"
           />
         ))}
       </div>
