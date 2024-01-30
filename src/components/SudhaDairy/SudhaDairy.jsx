@@ -7,11 +7,11 @@ import Header from '../Others/Header';
 const SudhaDairySection = () => {
   return (
     <>
-      <div className="sudha-dairy-container sm:m-10 m-4 p-0 bg-slate-800  text-white">
+      <div className="sudha-dairy-container sm:m-10  text-white">
         <BreadCrumb />
         <Header />
 
-        <div className="bg-slate-700 p-4 rounded-xl shadow-md text-center">
+        <div className=" text-center">
           <h2 className="text-4xl font-bold mb-8 text-center bg-slate-800 p-4 rounded-xl text-blue-500">
             Discover Sudha Dairy Products
           </h2>
