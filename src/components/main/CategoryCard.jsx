@@ -8,16 +8,16 @@ const CategoryCard = () => {
 
     return (
         <>
-            <h1 className="text-center text-3xl text-white font-bold py-8 m-4 rounded-xl bg-slate-700">
+            <h1 className="text-center text-3xl text-white font-bold py-4 rounded-xl mt-6 bg-slate-800">
                 Categories We Offer
             </h1>
-            <div className="min-h-screen flex items-center justify-center bg-slate-800">
-                <div className="grid grid-cols-1 rounded-xl sm:grid-cols-2 bg-slate-900  md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-screen-3xl  m-4 p-4 ">
+            <div className="min-h-screen flex items-center justify-center">
+                <div className="grid grid-cols-1 rounded-xl sm:grid-cols-2 bg-slate-700  md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-screen-3xl mt-2 ">
                     {categories.map(category => (
                         <Link key={category.id} to={`/${category.route.toLowerCase()}`}>
                             <div
                                 key={category.id}
-                                className=" bg-slate-700 p-16 shadow-2xl rounded-xl text-white transition-transform transform"
+                                className=" bg-slate-800 p-16 shadow-2xl rounded-xl text-white transition-transform transform"
                             >
                                 <h3 className="text-3xl my-3 font-semibold">{category.name}</h3>
                                 <p className="text-2xl font-bold      ">

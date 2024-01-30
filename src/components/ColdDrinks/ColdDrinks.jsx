@@ -9,10 +9,10 @@ const ColdDrinkComponent = () => {
   };
 
   return (
-    <div className="cold-drink-container sm:m-10 m-4 p-0 bg-slate-800 text-white">
+    <div className="cold-drink-container sm:m-10 text-white">
       <Breadcrumb />
       <Header />
-      <div className="cold-drink-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
+      <div className="cold-drink-content bg-slate-700  rounded-xl shadow-md text-center">
         <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500 p-4 rounded-xl">
           Explore Our Refreshing Collection at{' '}
           <span className="block">Your Cold Drinks Shop</span>

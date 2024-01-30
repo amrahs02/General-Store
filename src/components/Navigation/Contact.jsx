@@ -15,11 +15,11 @@ const Contact = () => {
   ];
 
   return (
-    <div className="contact-container sm:m-10 m-4 p-0 bg-slate-800 text-white">
+    <div className="contact-container sm:m-10  text-white">
       <BreadCrumb />
       <Header />
 
-      <div className="contact-content bg-slate-700 p-4 rounded-xl text-center">
+      <div className="contact-content rounded-xl text-center">
         <h1 className="text-4xl font-bold mb-6 bg-slate-800 text-blue-500 p-4 rounded-xl">
           Contact Us
         </h1>

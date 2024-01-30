@@ -26,7 +26,6 @@ const App = () => {
           <Route path="/generalstore" element={<GeneralStore />} />
           <Route path="/colddrinks" element={<ColdDrinks />} />
           <Route path="/recharge" element={<Recharge />} />
-          {/* <Route path="/sudhadairy/:categoryName/:productName" element={<ProductPage/>} /> */}
           <Route path='/faq' element={<Faq />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
