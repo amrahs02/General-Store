@@ -14,21 +14,21 @@ const Xerox = () => {
   };
 
   return (
-    <div className="  xerox-container sm:m-10 p-0  text-white">
+    <div className="  xerox-container sm:m-10 m-4 p-0 bg-slate-800 text-white">
       <BreadCrumb />
       <Header />
-      <div className="xerox-content bg-slate-700 rounded-xl text-center">
-        <h1 className="text-4xl font-bold my-2  text-blue-500  bg-slate-800 p-4  rounded-xl">
+      <div className="xerox-content bg-slate-700 p-4 rounded-xl shadow-md text-center">
+        <h1 className="text-4xl font-bold mb-6  text-blue-500  bg-slate-800 p-4  rounded-xl">
           Welcome to <span className="block">{namesData.shopName}</span>
         </h1>
 
-        <p className="text-gray-300 bg-slate-800 text-lg my-2 p-4 rounded-xl">
+        <p className="text-gray-300 bg-slate-800 text-lg mb-6 p-4 rounded-xl">
           Discover the power of seamless documentation at{' '}
           <span className="font-bold text-blue-500">{namesData.shopName}</span>. We offer a range of   <span className="text-purple-500">xerox</span>, services with attractive   <span className="text-green-500">discounts</span>, for various documents.
         </p>
 
         {/* Additional Xerox Services */}
-        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-2 rounded-xl p-4 font-bold'>Our Services</h2>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Our Services</h2>
 
         <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-2">
           <div className=" relative rounded-xl" style={{
@@ -87,7 +87,7 @@ const Xerox = () => {
         </div>
 
         {/* Document Submission Options */}
-        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-2 rounded-xl p-4 font-bold'>Preferred method to submit docs</h2>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-4 rounded-xl p-4 font-bold'>Preferred method to submit docs</h2>
         <div className='flex gap-2 '>
           <div className="document-submission  w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
             <h2 className="text-xl font-bold mb-4">Submit Documents</h2>

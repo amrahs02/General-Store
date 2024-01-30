@@ -31,7 +31,7 @@ const MainHeading = ({ language, toggleLanguage }) => {
 
   return (
     <>
-      <div className="heading  rounded-xl relative bg-slate-900">
+      <div className="heading m-4 p-4 rounded-xl relative bg-slate-900">
         <Slider  ref={sliderRef} {...sliderSettings}>
           <div className="bg-cover bg-center rounded-xl bg-no-repeat relative h-screen">
             <img

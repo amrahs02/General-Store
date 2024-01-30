@@ -24,9 +24,11 @@ const Layout = () => {
   };
 
   return (
-    <div className="bg-slate-700  min-h-screen font-sans overflow-x-hidden">
-      <div className="flex z-10 mx-2  mt-2 p-2 rounded-lg flex-row md:flex-row justify-between items-center bg-slate-900  text-white">
-        <h1 className="text-white text-lg font-bold">Anushka General Store</h1>
+    <div className="bg-slate-800  min-h-screen font-sans overflow-x-hidden">
+      <div className="flex z-10 mx-4  mt-4 p-4 rounded-lg flex-col md:flex-row justify-between items-center bg-slate-900  text-white">
+        <div className="text-center md:text-left">
+          <h1 className="text-white text-xl ml-2 font-bold">Anushka General Store</h1>
+        </div>
 
         <div className="md:mb-0 ">
           <ul className={`flex ${showMobileMenu ? 'flex-col' : 'md:flex-row'} p-4  items-center sm:flex-row sm:flex  px-2 space-y-2 md:space-x-4 md:space-y-0 ${showMobileMenu ? 'block' : 'hidden'}`}>
@@ -75,16 +77,18 @@ const Layout = () => {
         </div>
         <div className="flex items-center space-x-4">
           <LanguageToggle />
-          {/* <Cart showModal={showModal} toggle={toggle} /> */}
+
+{/* <Cart              showModal={showModal} toggle={toggle} /> */}
+
           <button className="bg-blue-500 rounded-full py-2 px-4 my-4 md:my-0 md:ml-4"
             onClick={toggle}> <FontAwesomeIcon icon={faCartShopping} />
           </button>
-
+          
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="main-content m-2 overflow-x-hidden bg-slate-700">
+      <div className="main-content overflow-x-hidden bg-slate-800">
         <Outlet />
       </div>
       <div>
