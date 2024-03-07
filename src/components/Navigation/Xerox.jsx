@@ -87,7 +87,7 @@ const Xerox = () => {
         </div>
 
         {/* Document Submission Options */}
-        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-2 rounded-xl p-4 font-bold'>Preferred method to submit docs</h2>
+        <h2 className='text-gray-300 bg-slate-800 w-full text-2xl my-2 rounded-xl p-4 font-bold'>Preferred method to submit docs for Printing</h2>
         <div className='flex gap-2 '>
           <div className="document-submission  w-full bg-slate-800 text-gray-300 p-8 rounded-xl">
             <h2 className="text-xl font-bold mb-4">Submit Documents</h2>
