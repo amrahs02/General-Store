@@ -8,7 +8,7 @@ import {
   faCartShopping,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
-import LanguageToggle from '../LanguageFeature/LanguageToggle';
+import LanguageToggle from '../../LanguageToggle/LanguageToggle';
 
 
 const Layout = () => {

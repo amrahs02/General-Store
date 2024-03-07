@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -5,11 +6,13 @@ import 'slick-carousel/slick/slick-theme.css';
 import sprite1 from '../../assets/images/sprite-2.jpg';
 import sprite2 from '../../assets/images/sprite-3.jpg';
 import sprite4 from '../../assets/images/sprite-4.jpg';
-import { toggleLanguage } from '../../actions/languageActions';
-import { connect } from 'react-redux';
-import { useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleLanguage } from '../../LanguageToggle/LanguageSlice';
 
-const MainHeading = ({ language, toggleLanguage }) => {
+const MainHeading = () => {
+  const dispatch = useDispatch();
+  const currentLanguage = useSelector((state) => state.language.currentLanguage);
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -29,73 +32,65 @@ const MainHeading = ({ language, toggleLanguage }) => {
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
 
+  // Language-specific content
+  const languageContent = {
+    english: {
+      welcome: 'Welcome to',
+      storeName: 'Anushka General Store',
+      sudhaCorner: '& Sudha Corner',
+      discoverUs: 'Discover Us',
+    },
+    hindi: {
+      welcome: 'आपका स्वागत है',
+      storeName: 'अनुष्का जनरल स्टोर',
+      sudhaCorner: '& सुधा कॉर्नर',
+      discoverUs: 'हमें खोजें',
+    },
+  };
+
+  // Use the appropriate language content based on the selected language
+  const content = languageContent[currentLanguage];
+
+  const toggleLanguage = () => {
+    dispatch(toggleLanguage());
+  };
+
   return (
     <>
-      <div className="heading  rounded-xl relative bg-slate-900">
-        <Slider  ref={sliderRef} {...sliderSettings}>
+      <div className="heading rounded-xl relative bg-slate-900">
+        <Slider ref={sliderRef} {...sliderSettings}>
           <div className="bg-cover bg-center rounded-xl bg-no-repeat relative h-screen">
-            <img
-              className='w-screen h-full rounded-xl opacity-60 object-cover '
-              src={sprite1}
-              alt="Slide 1"
-            />
-          </div>
-          <div className="bg-cover rounded-xl  bg-center bg-no-repeat relative  h-screen">
-            <img
-              className='w-screen rounded-xl h-full opacity-60 object-cover '
-              src={sprite2}
-              alt="Slide 1"
-            />
+            <img className='w-screen h-full rounded-xl opacity-60 object-cover' src={sprite1} alt="Slide 1" />
           </div>
           <div className="bg-cover rounded-xl bg-center bg-no-repeat relative h-screen">
-            <img
-              className='w-screen rounded-xl h-full opacity-60 object-cover '
-              src={sprite4}
-              alt="Slide 1"
-            />
+            <img className='w-screen rounded-xl h-full opacity-60 object-cover' src={sprite2} alt="Slide 1" />
+          </div>
+          <div className="bg-cover rounded-xl bg-center bg-no-repeat relative h-screen">
+            <img className='w-screen rounded-xl h-full opacity-60 object-cover' src={sprite4} alt="Slide 1" />
           </div>
         </Slider>
-        <div className="absolute top-1/3 left-1/2 w-5/6 transform -translate-x-1/2  -translate-y-1/2 text-center text-white">
+        <div className="absolute top-1/3 left-1/2 w-5/6 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
           {/* The rest of your content */}
           <h1 className="text-6xl md:text-8xl mt-32 font-extrabold mb-6 text-white">
-            <div className='text-2xl'>Welcome to</div>
+            <div className='text-2xl'>{content.welcome}</div>
             <div>
-              Anushka General Store
+              {content.storeName}
             </div>
-            <div className='text-2xl'>& Sudha Corner</div>
+            <div className='text-2xl'>{content.sudhaCorner}</div>
           </h1>
-          <p className="text-lg md:text-xl font-semibold mb-10 text-blue-300">
-            {language === 'english'
-              ? 'Discover a world of quality products and exceptional service.'
-              : 'उत्कृष्ट उत्पादों और असाधारण सेवा का एक दुनिया का खोज करें।'}
-          </p>
+
           <div className="flex items-center justify-center space-x-4">
             <Link to="/discoverus">
               <button className="bg-blue-500 text-white rounded-full px-10 py-3 hover:bg-blue-700">
-                Discover Us
+                {content.discoverUs}
               </button>
             </Link>
+            
           </div>
-          {/* <div className=" mt-10">
-            Managed by: <span className='font-bold text-yellow-500'>
-              Arun Sharma
-            </span>
-          </div> */}
-
         </div>
       </div>
     </>
   );
 };
 
-const mapStateToProps = (state) => ({
-  language: state.language.language,
-});
-
-const mapDispatchToProps = {
-  toggleLanguage,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(MainHeading);
-
-
+export default MainHeading;
