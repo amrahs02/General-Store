@@ -7,26 +7,33 @@ import UnderConstruction from '../Others/UnderConstruction';
 import Gallery from './Gallery';
 
 
-const Home = () => (
-  <div className="home-container">
-    <Suspense fallback={<LoadingFallback />}>
-      <MainHeading />
-    </Suspense>
-    <Suspense fallback={<LoadingFallback />}>
-      {/* <Products /> */}
-    </Suspense>
-    <Suspense fallback={<LoadingFallback />}>
-      <CategoryCard />
-    </Suspense>
-    <Suspense fallback={<LoadingFallback />}>
-    </Suspense>
-    <Suspense fallback={<LoadingFallback />}>
-      <Gallery />
-    </Suspense>
-    <UnderConstruction />
 
-  </div>
-);
+const Home = () => {
+
+
+  return (
+    <div className="home-container">
+      <Suspense fallback={<LoadingFallback />}>
+        <MainHeading />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        {/* <Products /> */}
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <CategoryCard />
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+      </Suspense>
+      <Suspense fallback={<LoadingFallback />}>
+        <Gallery />
+      </Suspense>
+      <UnderConstruction />
+      {/* <h1>Hello {user.name}</h1> */}
+      {/* <h1>Hello {user.name}</h1> */}
+      
+    </div>
+  )
+};
 
 export default Home;
 

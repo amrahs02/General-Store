@@ -11,9 +11,12 @@ import GeneralStore from './components/GeneralStore';
 import ColdDrinks from './components/ColdDrinks/ColdDrinks';
 import Recharge from './components//Navigation/Recharge';
 import BottomNav from './components/Navigation/BottomNav';
+import LoginButton from '../src/LoginButton';
 
 
 const App = () => {
+
+
   return (
     <BrowserRouter >
       <Routes>
@@ -27,10 +30,13 @@ const App = () => {
           <Route path="/colddrinks" element={<ColdDrinks />} />
           <Route path="/recharge" element={<Recharge />} />
           <Route path='/faq' element={<Faq />} />
+          <Route path='/login' element={<LoginButton />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
+
       <BottomNav />
+
     </BrowserRouter>
   );
 };

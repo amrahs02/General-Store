@@ -42,7 +42,7 @@ const Footer = () => {
       connect: 'जुड़ें',
       shopWithConfidence: 'आनुष्का जनरल स्टोर पर आत्मविश्वास से खरीदारी करें। हम हमारे उत्पादों की प्रामाणिकता की गारंटी देते हैं।',
       easyReturns: 'आपके आदेश प्राप्त करने के 14 दिनों के भीतर आसान रिटर्न।',
-      copyright: `&copy; ${new Date().getFullYear()} आनुष्का जनरल स्टोर। सभी अधिकार सुरक्षित हैं।`,
+      copyright: ` ${new Date().getFullYear()} आनुष्का जनरल स्टोर। सभी अधिकार सुरक्षित हैं।`,
       qualityTrust: 'आप विश्वास कर सकते हैं। हमारी गुणवत्ता। जल्दी ही हमें फिर से देखें!',
       designedDeveloped: 'डिज़ाइन और विकसित किया गया है',
       developerName: 'संदीप कुमार शर्मा',
@@ -53,8 +53,8 @@ const Footer = () => {
   const content = languageContent[currentLanguage];
 
   return (
-    <footer className="bg-slate-800 rounded-s-3xl mb-24 sm:m-0 rounded-e-3xl text-white">
-      <div className="container sm:mx-auto py-8 grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-2">
+    <footer className="bg-slate-800 rounded-s-3xl mb-24 sm:m-0  rounded-e-3xl text-white">
+      <div className="container sm:mx-auto py-8 grid grid-cols-1 m-4 sm:p-10 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="md:mb-0">
           <h4 className="text-2xl font-bold mb-4">{content.explore}</h4>
           <ul>
