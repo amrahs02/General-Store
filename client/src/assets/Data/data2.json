@@ -1,0 +1,46 @@
+{
+  "images": {
+    "milk": "/assets/milk.png",
+    "curd": "/assets/dahi.png",
+    "paneer": "/assets/paneer.png",
+    "rasgulla": "/assets/rasogulla.png",
+    "surbhiRabri": "/assets/surbhi-rabri.png",
+    "ghee": "/assets/ghee.jpg"
+  },
+  "welcome": {
+    "english": "Welcome to",
+    "hindi": "स्वागत है"
+  },
+  "Dairy": {
+    "english": "Dairy",
+    "hindi": "सुधा डेयरी"
+  },
+  "discoverText": {
+    "english": "Discover the finest dairy products from Dairy, where quality meets tradition. From pure and fresh milk to delightful sweets, we have it all for you.",
+    "hindi": "सुधा डेयरी से श्रेष्ठ डेयरी उत्पादों की खोज करें, जहां गुणवत्ता परंपरा से मिलती है। शुद्ध और ताजगी से भरे दूध से लेकर आपके लिए हम सब कुछ रखते हैं।"
+  },
+  "ourDairyDelights": {
+    "english": "Our Dairy Delights",
+    "hindi": "हमारे डेयरी डिलाइट्स"
+  },
+  "specialOrders": {
+    "english": "Special Orders for Your Special Moments",
+    "hindi": "आपके विशेष क्षणों के लिए विशेष आदेश"
+  },
+  "deliveryCommitment": {
+    "english": "Planning a wedding, birthday, or any special event? We, ve got you covered! Place orders for dairy products and make your celebrations even more memorable. Whether it's bulk milk, paneer, or delightful sweets, we cater to all your needs.  ",
+    "hindi": "शादी, जन्मदिन या कोई विशेष घटना का योजना बना रहे हैं? हम आपकी सुरक्षा के लिए हैं! सुधा डेयरी उत्पादों के लिए आदेश प्लेस करें और अपने उत्सवों को और भी यादगार बनाएं। चाहे बल्क दूध हो, पनीर हो, या मिठाई हो, हम आपकी सभी आवश्यकताओं का समर्थन करते हैं।"
+  },
+  "products": [
+    {
+      "name": {
+        "english": "Fresh Milk",
+        "hindi": "सुधा ताजा दूध"
+      },
+      "description": {
+        "english": "Pure and rich in flavor, a staple for a healthy lifestyle.",
+        "hindi": "शुद्ध और स्वाद में रिच, स्वस्थ जीवनशैली के लिए एक आदान-प्रदान है।"
+      }
+    }
+  ]
+}
