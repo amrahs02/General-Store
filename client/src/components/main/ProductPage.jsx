@@ -10,9 +10,14 @@ function ProductsPage() {
   const [error, setError] = useState(null);
   const dispatch = useDispatch();
 
+  const BASE_URL =
+    window.location.hostname === "localhost"
+      ? "http://localhost:5000"
+      : "https://backend-8ry5.onrender.com";
+
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/smartphones")
+      .get(`${BASE_URL}/api/smartphones`)
       .then((response) => {
         setSmartphones(response.data);
       })

@@ -8,11 +8,14 @@ const Gadgets = () => {
   const [error, setError] = useState(null); // For handling errors
   const dispatch = useDispatch();
 
+  const BASE_URL = window.location.hostname === "localhost" ? "http://localhost:5000" : "https://backend-8ry5.onrender.com";
+ 
+  
   // Fetch gadgets from the API
   useEffect(() => {
     const fetchGadgets = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/gadgets"); // Ensure your backend server is running
+        const response = await fetch(`${BASE_URL}/api/gadgets`); // Ensure your backend server is running
         if (!response.ok) throw new Error("Failed to fetch gadgets");
         const data = await response.json();
         setGadgets(data);

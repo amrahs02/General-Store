@@ -8,10 +8,12 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  const BASE_URL = window.location.hostname === "localhost" ? "http://localhost:5000" : "https://backend-8ry5.onrender.com";
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post("http://localhost:5000/register", {
+      const result = await axios.post(`${BASE_URL}/register`, {
         name,
         email,
         password,

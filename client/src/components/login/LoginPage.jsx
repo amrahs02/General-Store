@@ -8,11 +8,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  const BASE_URL =
+    window.location.hostname === "localhost"
+      ? "http://localhost:5000"
+      : "https://backend-8ry5.onrender.com";
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post(`${BASE_URL}/login`, {
         email,
         password,
       });
@@ -22,7 +27,7 @@ const Login = () => {
         localStorage.setItem("token", token);
 
         // Fetch user details with the token
-        const userResponse = await axios.get("http://localhost:5000/user", {
+        const userResponse = await axios.get(`${BASE_URL}/user`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -60,10 +65,15 @@ const Login = () => {
           <Breadcrumb />
         </div>
         <div className="bg-slate-800 bg-opacity-90 p-8 rounded-2xl shadow-md backdrop-blur-md">
-          <h1 className="text-2xl font-bold text-center mb-6 text-gray-100">Login</h1>
+          <h1 className="text-2xl font-bold text-center mb-6 text-gray-100">
+            Login
+          </h1>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className="block text-gray-200 font-semibold mb-2" htmlFor="email">
+              <label
+                className="block text-gray-200 font-semibold mb-2"
+                htmlFor="email"
+              >
                 Email
               </label>
               <input
@@ -77,7 +87,10 @@ const Login = () => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-200 font-semibold mb-2" htmlFor="password">
+              <label
+                className="block text-gray-200 font-semibold mb-2"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input
@@ -105,8 +118,12 @@ const Login = () => {
           </p>
           <div className="text-center mt-4 text-gray-300">
             <p className="font-semibold">Test Credentials:</p>
-            <p>Email: <span className="text-blue-500">test123@gmail.com</span></p>
-            <p>Password: <span className="text-blue-500">test123</span></p>
+            <p>
+              Email: <span className="text-blue-500">test123@gmail.com</span>
+            </p>
+            <p>
+              Password: <span className="text-blue-500">test123</span>
+            </p>
           </div>
         </div>
       </div>
