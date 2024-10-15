@@ -51,34 +51,34 @@ Make sure you have the following installed:
    cd client
 Install dependencies:
 
-
+   ```
 npm install
 Run the development server:
 
-
+```
 npm run dev
+
 ## Backend Setup:
 Navigate to the server folder:
 
-
+```
 cd server
 Install dependencies:
 
-
+```
 npm install
 Set up environment variables by creating a .env file in the server folder with the following:
 
-
+```
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 Run the backend server:
 
-
+```
 npm start
 ##  Features
-User Authentication: Sign up, log in, and log out using JWT.
-Cart Management: Add products to the cart, view cart details, and proceed to checkout.
-Product Management: Browse and view details of products, such as smartphones and gadgets.
-Internationalization: Multilingual support using i18next.
-Responsive UI: The design is mobile-friendly and adapts to different screen sizes.
-sql
+1. User Authentication: Sign up, log in, and log out using JWT.
+2. Cart Management: Add products to the cart, view cart details, and proceed to checkout.
+3. Product Management: Browse and view details of products, such as smartphones and gadgets.
+4. Internationalization: Multilingual support using i18next.
+5. Responsive UI: The design is mobile-friendly and adapts to different screen sizes.
