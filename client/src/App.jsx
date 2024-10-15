@@ -9,7 +9,7 @@ import DiscoverUs from "./components/Others/DiscoverUs";
 import Faq from "./components/Others/Faq";
 import GeneralStore from "./components/GeneralStore";
 // import Drink from "./components/Routes/Drink";
-import BottomNav from "./components/Navigation/BottomNav";
+// import BottomNav from "./components/Navigation/BottomNav";
 import Gadgets from "./components/Routes/Gadgets";
 import SmartPhone from "./components/Routes/SmartPhone";
 
@@ -41,7 +41,7 @@ const App = () => {
         </Route>
       </Routes>
 
-      <BottomNav />
+      {/* <BottomNav /> */}
     </BrowserRouter>
   );
 };

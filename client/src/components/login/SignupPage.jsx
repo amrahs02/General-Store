@@ -19,7 +19,7 @@ const Signup = () => {
         password,
       });
 
-      console.log(result);
+      // console.log(result);
 
       if (result.data.message === "User_already_exists") {
         alert("User already exists");
@@ -30,7 +30,7 @@ const Signup = () => {
         navigate("/login"); // Navigate only after successful registration
       }
     } catch (err) {
-      console.error(err);
+      // console.error(err);
       alert("An error occurred. Please try again.");
     }
     navigate("/login");

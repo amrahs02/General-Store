@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ProductsCard from "../Routes/ProductsCard";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../LanguageToggle/cartSlice";
 import { toast } from "react-toastify";
@@ -50,13 +49,13 @@ function ProductsPage() {
     );
 
   return (
-    <div className="max-w-7xl mx-auto py-10 px-4">
-      <h1 className="text-4xl font-bold text-gray-900 mb-10 text-center">Smartphones Collection</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className=" mx-auto py-10 px-4">
+      <h1 className="text-4xl font-bold bg-slate-700 text-gray-100 p-3 rounded-2xl mb-10 text-center">Smartphones Collection</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-8">
         {smartphones.map((smartphone) => (
           <div
             key={smartphone._id}
-            className="bg-slate-800 shadow-lg rounded-2xl p-6 transform transition  hover:shadow-2xl"
+            className="bg-slate-700 shadow-lg rounded-2xl p-6 transform transition  hover:shadow-2xl"
           >
             {smartphone.imageUrl && (
               <img

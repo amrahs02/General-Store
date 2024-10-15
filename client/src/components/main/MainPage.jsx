@@ -62,7 +62,7 @@ const MainHeading = () => {
     <>
       <div className="heading flex justify-center items-center rounded-2xl relative bg-gray-700 ">
         <Slider
-          className="sm:w-10/1 pt-20 w-full"
+          className="sm:w-10/1 w-full"
           ref={sliderRef}
           {...sliderSettings}
         >
@@ -105,7 +105,7 @@ const MainHeading = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-center text-3xl text-white font-bold py-4 rounded-2xl mt-6 bg-slate-800 ">
+      <h1 className="text-center text-3xl text-white font-bold py-4 rounded-2xl m-4 bg-slate-700 ">
         Categories We Offer
       </h1>
       {/* <div className="grid grid-cols-1 rounded-2xl sm:grid-cols-2 bg-slate-700  md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-screen-3xl mt-2">

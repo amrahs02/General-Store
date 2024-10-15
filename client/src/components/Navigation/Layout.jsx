@@ -7,7 +7,6 @@ import LanguageToggle from "../../LanguageToggle/LanguageToggle";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineHome } from "react-icons/hi";
 import { toggleCart } from "../../LanguageToggle/cartSlice";
-// import { BiSolidDrink } from "react-icons/bi";
 import { Logout, Person2TwoTone } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
 import { LuSmartphone } from "react-icons/lu";
@@ -31,112 +30,104 @@ const Layout = () => {
   };
 
   const handleLogout = () => {
-    localStorage.clear(); // Clear all local storage
+    localStorage.clear();
     navigate("/login");
   };
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    setIsLoggedIn(!!token); // Set logged-in state based on token presence
+    setIsLoggedIn(!!token);
     if (!token) {
       navigate("/login");
     }
   }, [navigate]);
 
   return (
-    <div className="bg-slate-700 min-h-screen font-sans overflow-x-hidden">
-      <div className="flex z-10 mx-2 mt-2 p-2 sm:px-10 px-4 w-full rounded-2xl flex-row justify-between items-center bg-slate-800 text-white">
-        <Link to="/" className="text-white text-lg font-bold">
-          General Store
-        </Link>
-
-        <div className="md:mb-0">
-          <ul
-            className={`flex ${
-              showMobileMenu ? "flex-col" : "md:flex-row"
-            } p-4 items-center sm:flex-row sm:flex px-2 space-y-2 md:space-x-4 md:space-y-0 ${
-              showMobileMenu ? "block" : "hidden"
-            }`}
-          >
-            <li className="flex hover:text-blue-500 items-center">
-              <HiOutlineHome className="mr-1" />
-              <Link to="/" className="text-white font-bold hover:text-blue-500">
-                Home
-              </Link>
-            </li>
-
-            {/* <li className="flex hover:text-blue-500 items-center">
-              <BiSolidDrink className="mr-1" />
-              <Link
-                to="/drink"
-                className="text-white font-bold hover:text-blue-500"
-              >
-                Drinks
-              </Link>
-            </li> */}
-
-            <li className="flex hover:text-blue-500 items-center">
-              <LuSmartphone className="mr-1" />
-              <Link
-                to="/smartphone"
-                className="text-white font-bold hover:text-blue-500"
-              >
-                Smartphone
-              </Link>
-            </li>
-            <li className="flex hover:text-blue-500 items-center">
-              <PiMouseSimpleLight className="mr-1" />
-              <Link
-                to="/gadgets"
-                className="text-white font-bold hover:text-blue-500"
-              >
-                Gadgets
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="flex items-center space-x-4 m-2">
-          {isLoggedIn && (
-            <li className="rounded-2xl py-3 px-4 my-4 mx-2 md:my-0 md:ml-4 flex items-center">
-              <div>Hey {name}!</div>
-            </li>
-          )}
-
-          <LanguageToggle />
-
-          <button onClick={() => dispatch(toggleCart(true))} className="relative">
-            <Link
-              to="/cart"
-              className="bg-blue-500 rounded-2xl py-3 px-4 my-4 mx-2 md:my-0 md:ml-4 flex items-center"
-            >
-              <FontAwesomeIcon icon={faCartShopping} className="mr-1" />
-            </Link>
-            {cartQuantity > 0 && (
-              <span className="cart-quantity absolute top-0 right-0 text-xs bg-red-500 text-white rounded-2xl px-2 py-1">
-                {cartQuantity}
-              </span>
-            )}
-          </button>
-
-          <Link
-            to="/login"
-            className="bg-blue-500 rounded-2xl py-3 px-4 my-4 mx-2 md:my-0 md:ml-4 flex items-center"
-          >
-            <Person2TwoTone className="mr-1" />
+    <div className="bg-slate-700  min-h-screen font-sans overflow-x-hidden">
+      {/* Header */}
+      <header className="flex items-center justify-between rounded-2xl m-2 p-4 bg-slate-800 text-white shadow-lg">
+        <Link to="/" className="text-2xl font-bold">General Store</Link>
+        <button className="md:hidden" onClick={toggleMobileMenu}>
+          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex md:items-center md:space-x-6">
+          <Link to="/" className="flex items-center hover:text-blue-400">
+            <HiOutlineHome className="mr-1" />
+            Home
           </Link>
-
-          <li className="bg-blue-500 rounded-2xl py-3 px-4 my-4 mx-2 md:my-0 md:ml-4 flex items-center">
-            <button onClick={handleLogout}>
-              <Logout />
+          <Link to="/smartphone" className="flex items-center hover:text-blue-400">
+            <LuSmartphone className="mr-1" />
+            Smartphone
+          </Link>
+          <Link to="/gadgets" className="flex items-center hover:text-blue-400">
+            <PiMouseSimpleLight className="mr-1" />
+            Gadgets
+          </Link>
+          <Link to="/login" className="flex items-center hover:text-blue-400">
+            <Person2TwoTone className="mr-1" />
+            Login
+          </Link>
+          {isLoggedIn && (
+            <button onClick={handleLogout} className="flex items-center hover:text-blue-400">
+              <Logout className="mr-1" />
+              Logout
             </button>
-          </li>
+          )}
+        </nav>
+
+        {/* User Greeting and Cart */}
+        <div className="flex items-center space-x-4">
+          {isLoggedIn && <span className="text-sm">Hey, {name}!</span>}
+          <LanguageToggle />
+          <button onClick={() => dispatch(toggleCart(true))} className="relative">
+            <Link to="/cart">
+              <FontAwesomeIcon icon={faCartShopping} className="text-xl text-white" />
+              {cartQuantity > 0 && (
+                <span className="absolute top-0 right-0 text-xs bg-red-500 text-white rounded-full px-1 py-0.5">{cartQuantity}</span>
+              )}
+            </Link>
+          </button>
         </div>
+      </header>
+
+      {/* Mobile Navigation */}
+      <div className={`md:hidden ${showMobileMenu ? "block" : "hidden"} bg-gray-800`}>
+        <nav className="flex flex-col p-4 space-y-2">
+          <Link to="/" className="flex items-center text-white hover:text-blue-400">
+            <HiOutlineHome className="mr-1" />
+            Home
+          </Link>
+          <Link to="/smartphone" className="flex items-center text-white hover:text-blue-400">
+            <LuSmartphone className="mr-1" />
+            Smartphone
+          </Link>
+          <Link to="/gadgets" className="flex items-center text-white hover:text-blue-400">
+            <PiMouseSimpleLight className="mr-1" />
+            Gadgets
+          </Link>
+          <Link to="/login" className="flex items-center text-white hover:text-blue-400">
+            <Person2TwoTone className="mr-1" />
+            Login
+          </Link>
+          {isLoggedIn && (
+            <button onClick={handleLogout} className="flex items-center text-white hover:text-blue-400">
+              <Logout className="mr-1" />
+              Logout
+            </button>
+          )}
+        </nav>
       </div>
 
-      <div className="main-content m-2 overflow-x-hidden bg-slate-700">
+      {/* Main Content */}
+      <main className="m-2 bg-gray-800">
         <Outlet />
-      </div>
+      </main>
+      
+      {/* Footer */}
       <Footer />
     </div>
   );

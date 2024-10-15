@@ -15,7 +15,6 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post(`${BASE_URL}/login`, {
         email,
@@ -25,7 +24,6 @@ const Login = () => {
       if (response.data.message === "Success") {
         const token = response.data.token;
         localStorage.setItem("token", token);
-
         // Fetch user details with the token
         const userResponse = await axios.get(`${BASE_URL}/user`, {
           headers: {
@@ -36,6 +34,7 @@ const Login = () => {
         // Store user data in local storage or state
         localStorage.setItem("name", userResponse.data.name);
         navigate("/"); // Redirect to the home page
+        alert("Login successful");
       } else {
         handleLoginError(response.data.message);
       }
