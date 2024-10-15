@@ -1,23 +1,24 @@
 [
     {
-        "id": 1,
-        "name": "Cold Drinks",
-        "route": "colddrinks",
-        "description": "Quench your thirst with our refreshed Cold Drinks.",
-        "image": "https://as1.ftcdn.net/v2/jpg/04/99/80/72/1000_F_499807265_uszlulkVF96h1bRKizY6Bg5Ljoo2fuPM.jpg"
+      "id": 1,
+      "name": "Smartphone",
+      "route": "smartphone",
+      "description": "Explore the latest smartphones with cutting-edge technology.",
+      "image": "https://as1.ftcdn.net/v2/jpg/02/45/86/89/1000_F_245868914_8GcvFmjVhVuqvqdRmRZCNDRYq40tAIlM.jpg"
     },
     {
-        "id": 2,
-        "route": "dairy",
-        "name": "Dairy Corner",
-        "description": "Discover unique and authentic dairy items at Dairy Corner.",
-        "image": "https://5.imimg.com/data5/NU/LA/GLADMIN-10870697/sudha-healthy-toned-milk.png"
+      "id": 2,
+      "name": "Gadgets",
+      "route": "gadgets",
+      "description": "Discover innovative gadgets to enhance your everyday life.",
+      "image": "https://as1.ftcdn.net/v2/jpg/02/49/95/88/1000_F_249958849_dF2opPztyrb2DhCWVjlX0w1ITgVeF6eq.jpg"
     },
     {
-        "id": 5,
-        "route": "recharge",
-        "name": "Recharge",
-        "description": "Stay connected with our Recharge services.",
-        "image": "https://i.gadgets360cdn.com/large/jio_airtel_vi_vodafone_idea_image_1612358966262.jpg"
+      "id": 3,
+      "name": "Drink",
+      "route": "drink",
+      "description": "Quench your thirst with refreshing beverages and drinks.",
+      "image": "https://as1.ftcdn.net/v2/jpg/04/99/80/72/1000_F_499807265_uszlulkVF96h1bRKizY6Bg5Ljoo2fuPM.jpg"
     }
-]
+  ]
+  

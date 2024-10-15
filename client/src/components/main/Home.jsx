@@ -1,10 +1,11 @@
 
 import { Suspense, lazy } from 'react';
-const MainHeading = lazy(() => import('./MainHeading'));
+const MainPage = lazy(() => import('./MainPage'));
 import { SyncLoader } from 'react-spinners'; // Import the SyncLoader from react-spinners
-import CategoryCard from './CategoryCard';
-import UnderConstruction from '../Others/UnderConstruction';
-import Gallery from './Gallery';
+import ProductsPage from './ProductPage';
+import CategoryCard from  '../categories/CategoryCard';
+// import UnderConstruction from '../Others/UnderConstruction';
+// import Gallery from './Gallery';
 
 
 
@@ -14,7 +15,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <Suspense fallback={<LoadingFallback />}>
-        <MainHeading />
+        <MainPage />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         {/* <Products /> */}
@@ -23,14 +24,15 @@ const Home = () => {
         <CategoryCard />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
+        <ProductsPage />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
-        <Gallery />
+        {/* <Gallery /> */}
       </Suspense>
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
       {/* <h1>Hello {user.name}</h1> */}
       {/* <h1>Hello {user.name}</h1> */}
-      
+
     </div>
   )
 };

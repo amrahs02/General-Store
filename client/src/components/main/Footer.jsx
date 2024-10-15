@@ -21,12 +21,12 @@ const Footer = () => {
       privacyPolicy: 'Privacy Policy',
       returnsRefunds: 'Returns & Refunds',
       connect: 'CONNECT',
-      shopWithConfidence: 'Shop with confidence at Anushka General Store. We guarantee the authenticity of our products.',
+      shopWithConfidence: 'Shop with confidence at General Store. We guarantee the authenticity of our products.',
       easyReturns: 'Easy returns within 14 days of receiving your order.',
-      copyright: `&copy; ${new Date().getFullYear()} Anushka General Store. All rights reserved.`,
+      copyright: `&copy; ${new Date().getFullYear()} General Store. All rights reserved.`,
       qualityTrust: 'Quality you can trust. Visit us again soon!',
       designedDeveloped: 'Designed and Developed by',
-      developerName: 'Sandeep Kumar Sharma',
+      developerName: 'Sandeep Sharma',
     },
     hindi: {
       explore: 'खोजें',
@@ -45,7 +45,7 @@ const Footer = () => {
       copyright: ` ${new Date().getFullYear()} आनुष्का जनरल स्टोर। सभी अधिकार सुरक्षित हैं।`,
       qualityTrust: 'आप विश्वास कर सकते हैं। हमारी गुणवत्ता। जल्दी ही हमें फिर से देखें!',
       designedDeveloped: 'डिज़ाइन और विकसित किया गया है',
-      developerName: 'संदीप कुमार शर्मा',
+      developerName: 'संदीप शर्मा',
     },
   };
 
@@ -94,13 +94,13 @@ const Footer = () => {
         <div>
           <h4 className="text-2xl font-bold mb-4">{content.connect}</h4>
           <div className="flex space-x-4 mb-4">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://www.instagram.com//" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-gray-400">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
@@ -114,7 +114,7 @@ const Footer = () => {
         <p className="text-sm text-gray-400">{content.qualityTrust}</p>
         <p className="text-sm text-gray-400">
           {content.designedDeveloped}{' '}
-          <a href="https://sandeepsharma.vercel.app" target="_blank" rel="noopener noreferrer" className="font-bold hover:underline">
+          <a href="https://amrahs.vercel.app" target="_blank" rel="noopener noreferrer" className="font-bold hover:underline">
             {content.developerName}
           </a>
         </p>

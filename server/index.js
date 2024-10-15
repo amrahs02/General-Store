@@ -1,76 +1,76 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
-const UserModel = require('./models/models');
-// const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const connectDB = require("./config/db");
+const userRoutes = require("./routes/userRoutes");
+const smartphoneRoutes = require("./routes/smartphoneRoutes");
+const gadgetRoutes = require("./routes/gadgetRoutes");
+const jwt = require("jsonwebtoken");
+const bodyParser = require("body-parser");
+// const passport = require("passport");
+const UserModel = require("./models/User");
+const bcrypt = require("bcrypt");
+// const LocalStrategy = require("passport-local").Strategy;
+require("dotenv").config(); // Load environment variables
 
-
+// const secretKey = j8ousiduouoisuoesuois; // Secret key for JWT
+// app.use(bodyParser.json());
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+connectDB();
 
-mongoose.connect("mongodb+srv://sandeepsharma2183:keHzkh5IjZkOGndL@cluster0.t9l79.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+// //middleware
+// const isAuthenticated = (req, res, next) => {
 
-// const JWT_SECRET =  
+//   // Get the token from the header
+//   if()
+  
+//   next();
+// };
 
-app.post('/login', (req, res) => {
-    console.log(req.body)
-    const { email, password } = req.body;
-    UserModel.findOne({ email: email })
-        .then(user => {
-            if (user) {
-                bcrypt.compare(password, user.password, (err, response) => {
-                    if (response) {
-                        res.json("Success")
-                    } else {
-                        res.json("Invalid_Credentials")
-                    }
-                })
-            }
-            else {
-                res.json({ message: "User_not_found" })
-            }
-        })
-})
-
-app.post('/register', (req, res) => {
-  const { name, email, password } = req.body;
-
-  // Check if the user already exists
-  UserModel.findOne({ email: email })
-      .then(existingUser => {
-          if (existingUser) {
-              // If user exists, return a message
-              return res.json({ message: "User_already_exists" });
-          } else {
-              // If user does not exist, proceed with registration
-              bcrypt.hash(password, 10)
-                  .then(hash => {
-                      UserModel.create({ name: name, email: email, password: hash })
-                          .then(users => {
-                              res.json(users);
-                              console.log(users);
-                          })
-                          .catch(err => {
-                              res.status(400).json({ message: err.message });
-                              console.log(err);
-                          });
-                  })
-                  .catch(err => {
-                      res.status(400).json({ message: err.message });
-                      console.log(err);
-                  });
-          }
-      })
-      .catch(err => {
-          res.status(500).json({ message: "Server error" });
-          console.log(err);
-      });
-});
+// // Example usage
+// app.get('/protectedRoute', isAuthenticated, (req, res) => {
+//   // This route is protected by the authentication middleware
+//   res.json({ message: 'Protected data' });
+// });
 
 
-app.listen(5000, () => {
-    console.log('Server is running on port 5000');
+
+
+// // Configure Passport's local strategy
+// passport.use(
+//   new LocalStrategy(
+//     { usernameField: "email" },
+//     async (email, password, done) => {
+//       try {
+//         const user = await UserModel.findOne({ email });
+//         if (!user) {
+//           return done(null, false, { message: "Incorrect email" });
+//         }
+//         const isValidPassword = await bcrypt.compare(password, user.password);
+//         if (isValidPassword) {
+//           return done(null, user);
+//         } else {
+//           return done(null, false, { message: "Incorrect password" });
+//         }
+//       } catch (err) {
+//         return done(err);
+//       }
+//     }
+//   )
+// );
+
+// app.use(passport.initialize());
+
+// const localAuthMiddleware = passport.authenticate("local", { session: false });
+
+app.use("/", userRoutes);
+app.use("/api/smartphones", smartphoneRoutes);
+app.use("/api/gadgets", gadgetRoutes);
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

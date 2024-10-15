@@ -27,7 +27,7 @@ const YourComponent = () => {
   return (
     <>
       <button
-        className='bg-blue-500 px-4 py-2 rounded-full'
+        className='bg-blue-500 px-4 py-2 rounded-2xl'
         onClick={handleToggle}
         style={{ cursor: 'pointer' }}
       >

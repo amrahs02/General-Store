@@ -1,8 +1,9 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import { Home, LocalDrink, PhoneAndroid, Print, Store } from '@mui/icons-material';
+import { Home, LocalDrink, MobileFriendlyTwoTone, Mouse, PhoneAndroid, Print, Store } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import { BiMouse } from 'react-icons/bi';
 
 export default function LabelBottomNavigation() {
   const [value, setValue] = React.useState('');
@@ -19,8 +20,8 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction
           label="Home"
           icon={
-            <Link to="/" className=' text-gray-300 rounded-full '>
-              <div className='bg-blue-500 rounded-full px-4 py-1' >
+            <Link to="/" className=' text-gray-300 rounded-2xl '>
+              <div className='bg-blue-500 rounded-2xl px-4 py-1' >
 
                 <Home />
               </div>
@@ -28,12 +29,12 @@ export default function LabelBottomNavigation() {
             </Link>}
         />
       </Link>
-      <Link to='/dairy' className='relative  text-gray-300'>
+      {/* <Link to='/dairy' className='relative  text-gray-300'>
         <BottomNavigationAction
           label="dairy"
           icon={
-            <Link to="/dairy" className='text-gray-300    rounded-full '>
-              <div className='bg-blue-500 rounded-full px-4 py-1' >
+            <Link to="/dairy" className='text-gray-300    rounded-2xl '>
+              <div className='bg-blue-500 rounded-2xl px-4 py-1' >
 
                 <Store />
               </div>
@@ -41,31 +42,31 @@ export default function LabelBottomNavigation() {
 
             </Link>}
         />
-      </Link>
-      <Link to='/xerox' className='relative   text-gray-300'>
+      </Link> */}
+      <Link to='/gadgets' className='relative   text-gray-300'>
         <BottomNavigationAction
-          label="Print"
+          label="Gadget"
           icon={
-            <Link to="/xerox" className='text-gray-300   rounded-full'>
-              <div className='bg-blue-500 rounded-full px-4 py-1' >
+            <Link to="/gadgets" className='text-gray-300   rounded-2xl'>
+              <div className='bg-blue-500 rounded-2xl px-4 py-1' >
 
-                <Print />
+                <Mouse />
               </div>
-              <h5>Print</h5>
+              <h5>Gadgets</h5>
 
             </Link>}
         />
       </Link>
-      <Link to='/colddrinks' className='relative  text-gray-300'>
+      <Link to='/smartphone' className='relative  text-gray-300'>
         <BottomNavigationAction
-          label="Drinks"
+          label="Smartphone"
           icon={
-            <Link to="/colddrinks" className='text-gray-300   rounded-full '>
-              <div className='bg-blue-500 rounded-full px-4 py-1' >
+            <Link to="/smartphone" className='text-gray-300   rounded-2xl '>
+              <div className='bg-blue-500 rounded-2xl px-4 py-1' >
 
-                <LocalDrink />
+                <MobileFriendlyTwoTone   />
               </div>
-              <h5>Drink</h5>
+              <h5>Mobile</h5>
 
             </Link>}
         />
